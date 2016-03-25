@@ -3,9 +3,9 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Dropzone.js - Ace Admin</title>
+		<title>Timeline - Ace Admin</title>
 
-		<meta name="description" content="Drag &amp; drop file upload with image preview. Demo работы dropzone.js" />
+		<meta name="description" content="based on widget boxes with 2 different styles" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
@@ -13,7 +13,6 @@
 		<link rel="stylesheet" href="assets/font-awesome/4.2.0/css/font-awesome.min.css" />
 
 		<!-- page specific plugin styles -->
-		<link rel="stylesheet" href="assets/css/dropzone.min.css" />
 
 		<!-- text fonts -->
 		<link rel="stylesheet" href="assets/fonts/fonts.googleapis.com.css" />
@@ -645,7 +644,7 @@
 						</ul>
 					</li>
 
-					<li class="active open">
+					<li class="">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-pencil-square-o"></i>
 							<span class="menu-text"> Forms </span>
@@ -692,7 +691,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="active">
+							<li class="">
 								<a href="dropzone.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Dropzone File Upload
@@ -737,7 +736,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-tag"></i>
 							<span class="menu-text"> More Pages </span>
@@ -784,7 +783,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="">
+							<li class="active">
 								<a href="timeline.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Timeline
@@ -900,9 +899,9 @@
 							</li>
 
 							<li>
-								<a href="#">Forms</a>
+								<a href="#">More Pages</a>
 							</li>
-							<li class="active">Dropzone File Upload</li>
+							<li class="active">Timeline</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -985,10 +984,10 @@
 
 						<div class="page-header">
 							<h1>
-								Dropzone.js
+								Timeline
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Drag &amp; drop file upload with image preview
+									based on widget boxes with 2 different styles
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -996,22 +995,577 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-								<div class="alert alert-info">
-									<i class="ace-icon fa fa-hand-o-right"></i>
+								<div class="align-right">
+									<span class="green middle bolder">Choose timeline: &nbsp;</span>
 
-									Please note that demo server is not configured to save uploaded files, therefore you may get an error message.
-									<button class="close" data-dismiss="alert">
-										<i class="ace-icon fa fa-times"></i>
-									</button>
+									<div class="btn-toolbar inline middle no-margin">
+										<div data-toggle="buttons" class="btn-group no-margin">
+											<label class="btn btn-sm btn-yellow active">
+												<span class="bigger-110">1</span>
+
+												<input type="radio" value="1" />
+											</label>
+
+											<label class="btn btn-sm btn-yellow">
+												<span class="bigger-110">2</span>
+
+												<input type="radio" value="2" />
+											</label>
+										</div>
+									</div>
 								</div>
 
-								<div>
-									<form action="./dummy.html" class="dropzone" id="dropzone">
-										<div class="fallback">
-											<input name="file" type="file" multiple="" />
+								<div id="timeline-1">
+									<div class="row">
+										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+											<div class="timeline-container">
+												<div class="timeline-label">
+													<span class="label label-primary arrowed-in-right label-lg">
+														<b>Today</b>
+													</span>
+												</div>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<img alt="Susan't Avatar" src="assets/avatars/avatar1.png" />
+															<span class="label label-info label-sm">16:22</span>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">
+																	<a href="#" class="blue">Susan</a>
+																	<span class="grey">reviewed a product</span>
+																</h5>
+
+																<span class="widget-toolbar no-border">
+																	<i class="ace-icon fa fa-clock-o bigger-110"></i>
+																	16:22
+																</span>
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a href="#" data-action="collapse">
+																		<i class="ace-icon fa fa-chevron-up"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main">
+																	Anim pariatur cliche reprehenderit, enim eiusmod
+																	<span class="red">high life</span>
+
+																	accusamus terry richardson ad squid &hellip;
+																	<div class="space-6"></div>
+
+																	<div class="widget-toolbox clearfix">
+																		<div class="pull-left">
+																			<i class="ace-icon fa fa-hand-o-right grey bigger-125"></i>
+																			<a href="#" class="bigger-110">Click to read &hellip;</a>
+																		</div>
+
+																		<div class="pull-right action-buttons">
+																			<a href="#">
+																				<i class="ace-icon fa fa-check green bigger-130"></i>
+																			</a>
+
+																			<a href="#">
+																				<i class="ace-icon fa fa-pencil blue bigger-125"></i>
+																			</a>
+
+																			<a href="#">
+																				<i class="ace-icon fa fa-times red bigger-125"></i>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-cutlery btn btn-success no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Going to cafe for lunch
+																	<div class="pull-right">
+																		<i class="ace-icon fa fa-clock-o bigger-110"></i>
+																		12:30
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-star btn btn-warning no-hover green"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">New logo</h5>
+
+																<span class="widget-toolbar no-border">
+																	<i class="ace-icon fa fa-clock-o bigger-110"></i>
+																	9:15
+																</span>
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a href="#" data-action="collapse">
+																		<i class="ace-icon fa fa-chevron-up"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main">
+																	Designed a new logo for our website. Would appreciate feedback.
+																	<div class="space-6"></div>
+
+																	<div class="widget-toolbox clearfix">
+																		<div class="pull-right action-buttons">
+																			<div class="space-4"></div>
+
+																			<div>
+																				<a href="#">
+																					<i class="ace-icon fa fa-heart red bigger-125"></i>
+																				</a>
+
+																				<a href="#">
+																					<i class="ace-icon fa fa-facebook blue bigger-125"></i>
+																				</a>
+
+																				<a href="#">
+																					<i class="ace-icon fa fa-reply light-green bigger-130"></i>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-flask btn btn-default no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main"> Took the final exam. Phew! </div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+
+											<div class="timeline-container">
+												<div class="timeline-label">
+													<span class="label label-success arrowed-in-right label-lg">
+														<b>Yesterday</b>
+													</span>
+												</div>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-beer btn btn-inverse no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">Haloween party</h5>
+
+																<span class="widget-toolbar">
+																	<i class="ace-icon fa fa-clock-o bigger-110"></i>
+																	1 hour ago
+																</span>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main">
+																	<div class="clearfix">
+																		<div class="pull-left">
+																			Lots of fun at Haloween party.
+																			<br />
+																			Take a look at some pics:
+																		</div>
+
+																		<div class="pull-right">
+																			<i class="ace-icon fa fa-chevron-left blue bigger-110"></i>
+
+																			&nbsp;
+																			<img alt="Image 4" width="36" src="assets/images/gallery/thumb-4.jpg" />
+																			<img alt="Image 3" width="36" src="assets/images/gallery/thumb-3.jpg" />
+																			<img alt="Image 2" width="36" src="assets/images/gallery/thumb-2.jpg" />
+																			<img alt="Image 1" width="36" src="assets/images/gallery/thumb-1.jpg" />
+																			&nbsp;
+																			<i class="ace-icon fa fa-chevron-right blue bigger-110"></i>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-trophy btn btn-pink no-hover green"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">Lorum Ipsum</h5>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main">
+																	Anim pariatur cliche reprehenderit, enim eiusmod
+																	<span class="green bolder">high life</span>
+																	accusamus terry richardson ad squid &hellip;
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-cutlery btn btn-success no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main"> Going to cafe for lunch </div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-bug btn btn-danger no-hover"></i>
+														</div>
+
+														<div class="widget-box widget-color-red2">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">Critical security patch released</h5>
+
+																<span class="widget-toolbar no-border">
+																	<i class="ace-icon fa fa-clock-o bigger-110"></i>
+																	9:15
+																</span>
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a href="#" data-action="collapse">
+																		<i class="ace-icon fa fa-chevron-up"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main">
+																	Please download the new patch for maximum security.
+																</div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+
+											<div class="timeline-container">
+												<div class="timeline-label">
+													<span class="label label-grey arrowed-in-right label-lg">
+														<b>May 17</b>
+													</span>
+												</div>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-leaf btn btn-primary no-hover green"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">Lorum Ipsum</h5>
+
+																<span class="widget-toolbar no-border">
+																	<i class="ace-icon fa fa-clock-o bigger-110"></i>
+																	10:22
+																</span>
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a href="#" data-action="collapse">
+																		<i class="ace-icon fa fa-chevron-up"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main">
+																	Anim pariatur cliche reprehenderit, enim eiusmod
+																	<span class="blue bolder">high life</span>
+																	accusamus terry richardson ad squid &hellip;
+																</div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
 										</div>
-									</form>
-								</div><!-- PAGE CONTENT ENDS -->
+									</div>
+								</div>
+
+								<div id="timeline-2" class="hide">
+									<div class="row">
+										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+											<div class="timeline-container timeline-style2">
+												<span class="timeline-label">
+													<b>Today</b>
+												</span>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">11:15 pm</span>
+
+															<i class="timeline-indicator btn btn-info no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding">
+																	<span class="bigger-110">
+																		<a href="#" class="purple bolder">Susan</a>
+																		reviewed a product
+																	</span>
+
+																	<br />
+																	<i class="ace-icon fa fa-hand-o-right grey bigger-125"></i>
+																	<a href="#">Click to read &hellip;</a>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">12:30 pm</span>
+
+															<i class="timeline-indicator btn btn-info no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding">
+																	Going to
+																	<span class="green bolder">veg cafe</span>
+																	for lunch
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">11:15 pm</span>
+
+															<i class="timeline-indicator btn btn-info no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding">
+																	Designed a new logo for our website. Would appreciate feedback.
+																	<a href="#">
+																		Click to see
+																		<i class="ace-icon fa fa-search-plus blue bigger-110"></i>
+																	</a>
+
+																	<div class="space-2"></div>
+
+																	<div class="action-buttons">
+																		<a href="#">
+																			<i class="ace-icon fa fa-heart red bigger-125"></i>
+																		</a>
+
+																		<a href="#">
+																			<i class="ace-icon fa fa-facebook blue bigger-125"></i>
+																		</a>
+
+																		<a href="#">
+																			<i class="ace-icon fa fa-reply light-green bigger-130"></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">9:00 am</span>
+
+															<i class="timeline-indicator btn btn-info no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding"> Took the final exam. Phew! </div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+
+											<div class="timeline-container timeline-style2">
+												<span class="timeline-label">
+													<b>Yesterday</b>
+												</span>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">9:00 am</span>
+
+															<i class="timeline-indicator btn btn-success no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding">
+																	<div class="clearfix">
+																		<div class="pull-left">
+																			<span class="orange2 bolder">Haloween party</span>
+
+																			Lots of fun at Haloween party.
+																			<br />
+																			Take a look at some pics:
+																		</div>
+
+																		<div class="pull-right">
+																			<i class="ace-icon fa fa-chevron-left blue bigger-110"></i>
+
+																			&nbsp;
+																			<img alt="Image 4" width="36" src="assets/images/gallery/thumb-4.jpg" />
+																			<img alt="Image 3" width="36" src="assets/images/gallery/thumb-3.jpg" />
+																			<img alt="Image 2" width="36" src="assets/images/gallery/thumb-2.jpg" />
+																			<img alt="Image 1" width="36" src="assets/images/gallery/thumb-1.jpg" />
+																			&nbsp;
+																			<i class="ace-icon fa fa-chevron-right blue bigger-110"></i>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">9:00 am</span>
+
+															<i class="timeline-indicator btn btn-success no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding">
+																	Anim pariatur cliche reprehenderit, enim eiusmod
+																	<span class="pink2 bolder">high life</span>
+																	accusamus terry richardson ad squid &hellip;
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">9:00 am</span>
+
+															<i class="timeline-indicator btn btn-success no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding"> Going to cafe for lunch </div>
+															</div>
+														</div>
+													</div>
+
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">9:00 am</span>
+
+															<i class="timeline-indicator btn btn-success no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding">
+																	<span class="red bolder">Critical security patch released</span>
+
+																	<br />
+																	Please download the new patch for maximum security.
+																</div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+
+											<div class="timeline-container timeline-style2">
+												<span class="timeline-label">
+													<b>May 17</b>
+												</span>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<span class="timeline-date">9:00 am</span>
+
+															<i class="timeline-indicator btn btn-grey no-hover"></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main no-padding">
+																	<span class="bolder blue">Lorum Ipsum</span>
+																	Anim pariatur cliche reprehenderit, enim eiusmod
+																	<span class="purple bolder">high life</span>
+																	accusamus terry richardson ad squid &hellip;
+																</div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+										</div>
+									</div>
+								</div>
+
+								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
 						</div><!-- /.row -->
 					</div><!-- /.page-content -->
@@ -1078,7 +1632,6 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 
 		<!-- page specific plugin scripts -->
-		<script src="assets/js/dropzone.min.js"></script>
 
 		<!-- ace scripts -->
 		<script src="assets/js/ace-elements.min.js"></script>
@@ -1086,36 +1639,13 @@
 
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
-			jQuery(function($){
-			
-			try {
-			  Dropzone.autoDiscover = false;
-			  var myDropzone = new Dropzone("#dropzone" , {
-			    paramName: "file", // The name that will be used to transfer the file
-			    maxFilesize: 0.5, // MB
-			
-				addRemoveLinks : true,
-				dictDefaultMessage :
-				'<span class="bigger-150 bolder"><i class="ace-icon fa fa-caret-right red"></i> Drop files</span> to upload \
-				<span class="smaller-80 grey">(or click)</span> <br /> \
-				<i class="upload-icon ace-icon fa fa-cloud-upload blue fa-3x"></i>'
-			,
-				dictResponseError: 'Error while uploading file!',
-				
-				//change the previewTemplate to use Bootstrap progress bars
-				previewTemplate: "<div class=\"dz-preview dz-file-preview\">\n  <div class=\"dz-details\">\n    <div class=\"dz-filename\"><span data-dz-name></span></div>\n    <div class=\"dz-size\" data-dz-size></div>\n    <img data-dz-thumbnail />\n  </div>\n  <div class=\"progress progress-small progress-striped active\"><div class=\"progress-bar progress-bar-success\" data-dz-uploadprogress></div></div>\n  <div class=\"dz-success-mark\"><span></span></div>\n  <div class=\"dz-error-mark\"><span></span></div>\n  <div class=\"dz-error-message\"><span data-dz-errormessage></span></div>\n</div>"
-			  });
-			  
-			   $(document).one('ajaxloadstart.page', function(e) {
-					try {
-						myDropzone.destroy();
-					} catch(e) {}
-			   });
-			
-			} catch(e) {
-			  alert('Dropzone.js does not support older browsers!');
-			}
-			
+			jQuery(function($) {
+				$('[data-toggle="buttons"] .btn').on('click', function(e){
+					var target = $(this).find('input[type=radio]');
+					var which = parseInt(target.val());
+					$('[id*="timeline-"]').addClass('hide');
+					$('#timeline-'+which).removeClass('hide');
+				});
 			});
 		</script>
 	</body>

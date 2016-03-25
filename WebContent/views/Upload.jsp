@@ -118,9 +118,7 @@
 		<jsp:directive.include file="Footer.jsp" />
 
 	</div>
-	<!-- /.main-container -->
-
-	<!--[if !IE]> -->
+	
 	
 </body>
 </body>

@@ -35,6 +35,16 @@
 						class="menu-icon fa fa-list"></i> <span class="menu-text">
 							List </span>
 				</a> <b class="arrow"></b></li>
+				
+				<li class=" " ><a href="CompaniesPage"> <i
+						class="menu-icon fa fa-gears"></i> <span class="menu-text">
+							Companies </span>
+				</a> <b class="arrow"></b></li>
+				
+				<li class=" " ><a href="EventsPage"> <i
+						class="menu-icon fa fa-gears"></i> <span class="menu-text">
+							Events </span>
+				</a> <b class="arrow"></b></li>
 			</ul>
 			<!--  End of nav list-->
 

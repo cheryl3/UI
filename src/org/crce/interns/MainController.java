@@ -27,5 +27,13 @@ public class MainController {
 	public String dropzone() {
 		return "Dropzone";
 	}
+	@RequestMapping("/CompaniesPage")
+	public String companiespage() {
+		return "CompaniesPage";
+	}
+	@RequestMapping("/EventsPage")
+	public String eventspage() {
+		return "EventsPage";
+	}
 	
 }

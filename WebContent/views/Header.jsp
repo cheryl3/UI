@@ -2,9 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
 
-</head>
 
 <body class="skin-3 no-skin">
 	<jsp:directive.include file="scripts.jsp" />
@@ -19,7 +17,7 @@
 					<span class="sr-only">Toggle sidebar</span>
 
 					<span class="icon-bar"></span>
-
+	
 					<span class="icon-bar"></span>
 
 					<span class="icon-bar"></span>
