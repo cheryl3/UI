@@ -54,15 +54,20 @@
 		
 
 		
-		<script src="assets/js/bootstrap.min.js"></script>
+		
 
 		<!-- page specific plugin scripts -->
 		<script src="assets/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/jquery.jqGrid.min.js"></script>
 		<script src="assets/js/grid.locale-en.js"></script>
-
 		
 		<!-- inline scripts related to this page -->
+	
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>	
+			
+		
 		<script type="text/javascript">
 			var grid_data = 
 			[ 

@@ -331,7 +331,7 @@
 		</div>
 		
 		<!-- basic scripts -->
-		<jsp:directive.include file="sidebar.jsp" />
+		<jsp:directive.include file="sidebarstudent.jsp" />
 
 		
 </body>

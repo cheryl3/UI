@@ -2300,7 +2300,10 @@ $('p').inlineEdit(replaceWith1, connectWith1);
 		 */
 		});
 	</script>
-
+	<!-- ace scripts -->
+	<script src="assets/js/ace-elements.min.js"></script>
+	<script src="assets/js/ace.min.js"></script>	
+		
 
 	
 	

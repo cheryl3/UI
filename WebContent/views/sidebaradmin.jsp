@@ -16,65 +16,28 @@
 
 
 			<ul class="nav nav-list" id="sidebarli">
-				<li class="active" id="Index"><a href="Index" > <i
-						class="menu-icon fa fa-tachometer"></i> <span class="menu-text">
-							Dashboard </span>
-				</a> <b class="arrow"></b></li>
+				
 
-				<li class=" " id="Login"><a href="Login"> <i
+				<li class=" " id="EventsPage"><a href="EventsPage"> <i
 						class="menu-icon fa fa-sign-in"></i> <span class="menu-text">
-							Login </span>
+							Events </span>
+				</a> <b class="arrow"></b></li>
+				
+				<li class=" " id="JobPosts"><a href="JobPosts"> <i
+						class="menu-icon fa fa-search"></i> <span class="menu-text">
+							Job Posts </span>
 				</a> <b class="arrow"></b></li>
 
-				<li class=" " id="Upload"><a href="Upload"> <i
-						class="menu-icon fa fa-cloud-upload"></i> <span class="menu-text">
-							Upload </span>
-				</a> <b class="arrow"></b></li>
-				
-				<li class=" " id="Search"><a href="searchHome"> <i
-						class="menu-icon fa fa-search"></i> <span class="menu-text">
-							Search </span>
-				</a> <b class="arrow"></b></li>
-				
-				<li class=" " id="list"><a href="list"> <i
-						class="menu-icon fa fa-list"></i> <span class="menu-text">
-							List </span>
-				</a> <b class="arrow"></b></li>
-				
-				<li class=" " id="CompaniesPage"><a href="CompaniesPage"> <i
+				<li class=" " id="Companies"><a href="ComapniesPage"> <i
 						class="menu-icon fa fa-gears"></i> <span class="menu-text">
 							Companies </span>
 				</a> <b class="arrow"></b></li>
 				
-				<li class=" " id="EventsPage"><a href="EventsPage"> <i
-						class="menu-icon fa fa-calendar"></i> <span class="menu-text">
-							Events </span>
+				<li class=" " id="Reviews"><a href="Reviews"> <i
+						class="menu-icon fa fa-list"></i> <span class="menu-text">
+							Reviews </span>
 				</a> <b class="arrow"></b></li>
 				
-				<li class=" " id="tpo"><a href="tpo"> <i
-						class="menu-icon fa fa-list"></i> <span class="menu-text">
-							TPO </span>
-				</a> <b class="arrow"></b></li>
-				
-				<li class=" " id="teachertpc"><a href="teachertpc"> <i
-						class="menu-icon fa fa-list"></i> <span class="menu-text">
-							FacultyTpc </span>
-				</a> <b class="arrow"></b></li>
-				
-				<li class=" " id="student"><a href="student"> <i
-						class="menu-icon fa fa-list"></i> <span class="menu-text">
-							Student </span>
-				</a> <b class="arrow"></b></li>
-				
-				<li class=" " id="studenttpc"><a href="studenttpc"> <i
-						class="menu-icon fa fa-list"></i> <span class="menu-text">
-							StudentTpc </span>
-				</a> <b class="arrow"></b></li>
-				
-				<li class=" " id="admin"><a href="admin"> <i
-						class="menu-icon fa fa-list"></i> <span class="menu-text">
-							Admin </span>
-				</a> <b class="arrow"></b></li>
 			</ul>
 			<!--  End of nav list-->
 

@@ -45,26 +45,51 @@
 
 			<div class="page-content">
 				<div class="page-header">
-					
+					<h1>
+						${userList[0].company} <small> <i
+							class="ace-icon fa fa-angle-double-right"></i> Applicants
+						</small>
+					</h1>
 				</div>
 				<!-- /.page-header -->
-				
-				
-				
-					<script type="text/javascript">
-						try {
-							ace.settings.check('main-container', 'fixed')
-						} catch (e) {
-						}
-					</script>
 
 
 
+				<script type="text/javascript">
+					try {
+						ace.settings.check('main-container', 'fixed')
+					} catch (e) {
+					}
+				</script>
 
-					
-					<jsp:directive.include file="Footer.jsp" />
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
 
-				
+
+						<div class="widget-body">
+							<div class="widget-main padding-24">
+								<div class="row align-center">
+									<h1 style="color: green;">
+										<div>Congratulations!</div>
+									</h1>
+									<a href="Index"> <img
+										src="http://cliparts.co/cliparts/8ix/noy/8ixnoyj8T.png"
+										alt="Success Icon" style="width: 256px; height: 256px;">
+									</a>
+									<h1 style="color: green;">
+										<div>Successful</div>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<jsp:directive.include file="Footer.jsp" />
+
+
 			</div>
 		</div>
 	</div>

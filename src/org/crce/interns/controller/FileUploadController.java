@@ -1,4 +1,4 @@
-package org.crce.interns;
+package org.crce.interns.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
