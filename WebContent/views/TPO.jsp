@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="UTF-8"%>
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,15 +17,22 @@
 		
 		<link rel="stylesheet" href="assets/css/select2.min.css" />
 		
+		
 		<!-- <link rel="stylesheet" href="assets/css/bootstrap-multiselect.min.css" /> -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
 		
-		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		
 		<!-- page specific plugin for calander styles -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
 		<link rel="stylesheet" href="assets/css/fullcalendar.min.css" />
 		<script src="assets/js/ace-extra.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		
+		
+		<!--  script for smooth scrolling 
+			
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
+		
+		-->
 		
 		
 </head>
@@ -63,10 +72,7 @@
 							<div class="page-header">
 							<h1>
 								User Profile Page
-								<small>
-									<i class="ace-icon fa fa-angle-double-right"></i>
-									3 styles with inline editable feature
-								</small>
+								
 							</h1>
 							</div><!-- /.page-header -->
 
@@ -74,7 +80,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="clearfix">
-									<div class="pull-left alert alert-success no-margin">
+									<!-- <div class="pull-left alert alert-success no-margin">
 										<button type="button" class="close" data-dismiss="alert">
 											<i class="ace-icon fa fa-times"></i>
 										</button>
@@ -82,8 +88,8 @@
 										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
 										Click on the image below or on profile fields to edit them ...
 									</div>
-
-									<div class="pull-right">
+ -->
+									<!-- <div class="pull-right">
 										<span class="green middle bolder">Choose profile: &nbsp;</span>
 
 										<div class="btn-toolbar inline middle no-margin">
@@ -107,10 +113,10 @@
 												</label>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
 
-								<div class="hr dotted"></div>
+								<!-- <div class="hr dotted"></div> -->
 
 							<div class="show">
 									<div id="user-profile-2" class="user-profile">
@@ -124,22 +130,22 @@
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#managejobs">
+													<a data-toggle="tab" href="#activity">
 														<i class="orange ace-icon fa fa-rss bigger-120"></i>
-														Manage jobs for students
+														Activity
 													</a>
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#placement">
+													<a data-toggle="tab" href="#uploads">
 														<i class="blue ace-icon fa fa-users bigger-120"></i>
-														Placement Details..
+														Uploads
 													</a>
 												</li>
 												<li>
-													<a data-toggle="tab" href="#addtpc">
+													<a data-toggle="tab" href="#notification">
 														<i class="pink ace-icon fa fa-picture-o bigger-120"></i>
-														Add Tpc's
+														Notification
 													</a>
 												</li>
 
@@ -155,10 +161,6 @@
 
 															<div class="space space-4"></div>
 
-															<a href="#" class="btn btn-sm btn-block btn-primary">
-																<i class="ace-icon fa fa-envelope-o bigger-110"></i>
-																<span class="bigger-110">Send a message</span>
-															</a>
 														</div><!-- /.col -->
 
 														<div class="col-xs-12 col-sm-9">
@@ -184,7 +186,7 @@
 																	<div class="profile-info-name"> Role </div>
 
 																	<div class="profile-info-value">
-																		<span>Faculty TPC (Room Allocation Incharge)</span>
+																		<span>Traning and Placement Organiser</span>
 																	</div>
 																</div>
 
@@ -261,14 +263,15 @@
 			
 												</div><!-- /#home -->
 
-												<div id="managejobs" class="tab-pane">
+												<div id="uploads" class="tab-pane">
 													<div class="row">
 														<div class="col-xs-12 col-sm-8">
 															<div class="widget-box">
 																<div class="widget-body">
 																 <div class="widget-main">	
 																	
-																		<div class="form-group">
+																		
+																			<form>
 																			<div>
 																				<label class="col-sm-3 control-label no-padding-left" for="form-field-1"> Job Profile </label>
 																				<div class="col-sm-9">
@@ -297,22 +300,20 @@
 																				</div>
 
 																				<br><br><br>
-																				<button class="btn btn-info" type="button">
+																				<button class="btn btn-info" type="submit">
 																					<i class="ace-icon fa fa-check bigger-110"></i>
 																					SEND
 																				</button>
 
 																				&nbsp; &nbsp; &nbsp;
-																				<button class="btn" type="reset">
+																				<button class="btn btn-inverse" type="reset">
 																					<i class="ace-icon fa fa-undo bigger-110"></i>
 																					Reset
 																				</button>
 																				
 																			</div>
-																	   
-																	   </div>
-
-																		
+																	   	</form>
+																	
 																		
 																	</div>
 																	
@@ -339,7 +340,7 @@
 
 													</div><!-- /#feed -->
 
-												<div id="placement" class="tab-pane">
+												<div id="notification" class="tab-pane">
 													
 												
 													
@@ -425,7 +426,7 @@
 
 												</div><!-- /#placements -->
 
-												<div id="addtpc" class="tab-pane">
+												<div id="activity" class="tab-pane">
 													<div class="row">
 														<div class="col-xs-12 col-sm-6 center">
 																<div id="accordion" class="accordion-style1 panel-group">
@@ -440,8 +441,8 @@
 																		</div>
 
 																		<div class="panel-collapse collapse in" id="collapseOne">
-																			<div class="panel-body">
-																				<form class="form-inline">
+																		 <div class="panel-body">
+																				<form:form class="form-inline">
 																					<div class="radio">
 																						<label>
 																							<input name="form-field-radio" type="radio" class="ace"  value="faculty"/>
@@ -468,9 +469,10 @@
 																					<button type="submit" class="btn btn-info btn-sm">
 																						<i class="ace-icon fa fa-key bigger-110"></i>Create
 																					</button>
-																				</form>
+																				</form:form>
 
 																			</div>
+																		 
 																		</div>
 																	</div>
 
@@ -504,6 +506,12 @@
 														<div>
 													</div>
 												</div>
+										
+														<div class="col-xs-12 col-sm-6 center">
+														  <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Event </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Candidates </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Send Mail </a>
+														</div>
 											</div><!-- /#pictures -->
 											</div>
 								
@@ -581,11 +589,11 @@
 			$('input[type="radio"]').click(function(){
 				if($(this).attr("value")=="faculty"){
 					$(".box").not(".faculty").hide('fast');
-					$(".faculty").show();
+					$(".faculty").show('slow');
 				}
 				if($(this).attr("value")=="student"){
 					$(".box").not(".student").hide('fast');
-					$(".student").show();
+					$(".student").show('slow');
 				}
 			});
 		}); 
@@ -975,3 +983,43 @@
 	
 </body>
 </html>
+
+
+
+<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!-- <SCRIPT type="text/javascript">
+    window.history.forward();
+    function noBack() { window.history.forward(); }
+</SCRIPT> -->
+<title>Spring3Example</title>
+</head>
+<body onload="noBack();"
+    onpageshow="if (event.persisted) noBack();" onunload="">
+<h3>Welcome To the TPO page !!!!! </h3>
+<h2>Logged in as <core:out value="${loginForm.userName}" /></h2>
+<table>
+
+	<tr>
+		<td><a href="addUser">Click here to Add users via csv file</a></td>
+	</tr>
+	<tr>
+		<td>1. <a href="addstudent.html">Add Student</a></td></tr>
+    <tr>
+		<td>2. <a href="addfaculty.html">Add Faculty</a></td></tr>
+	<tr>
+		<td>3. <a href="removeuser.html">Remove User</a></td>
+	</tr>
+	<tr>
+		<td><a href="form">Logout</a></td>
+	</tr>
+</table>
+</body>
+</html> --%>

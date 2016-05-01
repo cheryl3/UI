@@ -37,31 +37,48 @@
 								<ul class="ace-thumbnails ">
 									
 
-									<li><a href="#s"> <img style="border:0" width="200" height="150"
-											alt="150x150" src="assets/images/companies/jpmorgan.jpg" />
-											<div class="text">
-												<div class="inner">JP Morgan</div>
-											</div>
-									</a></li>
-									<li><a href="#s"> <img width="200" height="150"
-											alt="150x150" src="assets/images/companies/infosys.png" />
-											<div class="text">
-												<div class="inner">Infosys</div>
-											</div>
-									</a></li>
-									<li><a href="#s"> <img width="200" height="150"
-											alt="150x150" src="assets/images/companies/goldmansachs.png" />
-											<div class="text">
-												<div class="inner">GoldmanSachs</div>
-											</div>
-									</a></li>
+									<li><a href="Company1"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/jpmorgan.jpg" href="company1" />
+										</a>
+										
+									</li>
+									<li><a href="Company2"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/directi.jpg" />
+										</a>
+										
+									</li>
+									<li><a href="Company3"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/morganstanley.jpg" />
+										</a>
+										
+									</li>
+									<li><a href="Company4"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/l&t.jpg" />
+										</a>
+										
+									</li>
+									<li><a href="Company5"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/accenture.png" />
+										</a>
+										
+										
+									</li>
+									<li><a href="Company6"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/godrej.png" />
+										</a>
+										
+									</li>
+									<li><a href="Company7"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/zs.jpg" />
+										</a>
+										
+									</li>
 								
-									<li><a href="#s"> <img width="200" height="150"
+									<li><a href="Company8"> <img width="200" height="150"
 											alt="150x150" src="assets/images/companies/tcs.png" />
-											<div class="text">
-												<div class="inner">TCS</div>
-											</div>
-									</a></li>
+										</a>
+										
+									</li>
 									
 									
 								</ul>

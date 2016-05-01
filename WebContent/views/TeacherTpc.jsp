@@ -59,10 +59,7 @@
 						<div class="page-header">
 							<h1>
 								User Profile Page
-								<small>
-									<i class="ace-icon fa fa-angle-double-right"></i>
-									3 styles with inline editable feature
-								</small>
+								
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -70,16 +67,16 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="clearfix">
-									<div class="pull-left alert alert-success no-margin">
+									<!-- <div class="pull-left alert alert-success no-margin">
 										<button type="button" class="close" data-dismiss="alert">
 											<i class="ace-icon fa fa-times"></i>
 										</button>
 
 										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
 										Click on the image below or on profile fields to edit them ...
-									</div>
+									</div> -->
 
-									<div class="pull-right">
+									<!-- <div class="pull-right">
 										<span class="green middle bolder">Choose profile: &nbsp;</span>
 
 										<div class="btn-toolbar inline middle no-margin">
@@ -104,41 +101,45 @@
 											</div>
 										</div>
 									</div>
-								
 								</div>
 
-								<div class="hr dotted"></div>
+								<div class="hr dotted"></div> -->
 
 							<div class="show">
 									<div id="user-profile-2" class="user-profile">
 										<div class="tabbable">
 											<ul class="nav nav-tabs padding-18">
 												<li class="active">
-													<a data-toggle="tab" href="#home">
+													<a data-toggle="tab" href="#profile">
 														<i class="green ace-icon fa fa-user bigger-120"></i>
 														Profile
 													</a>
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#feed">
+													<a data-toggle="tab" href="#activity">
 														<i class="orange ace-icon fa fa-rss bigger-120"></i>
-														Manage jobs for students
+														Activity
 													</a>
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#friends">
+													<a data-toggle="tab" href="#uploads">
 														<i class="blue ace-icon fa fa-users bigger-120"></i>
-														Placement Details..
+														Uploads
 													</a>
 												</li>
-												
+												<li>
+													<a data-toggle="tab" href="#notification">
+														<i class="red ace-icon fa fa-bell bigger-120"></i>
+														Notification
+													</a>
+												</li>
 
 											</ul>
 
 											<div class="tab-content no-border padding-24">
-												<div id="home" class="tab-pane in active">
+												<div id="profile" class="tab-pane in active">
 													<div class="row">
 														<div class="col-xs-12 col-sm-3 center">
 															<span class="profile-picture">
@@ -147,10 +148,10 @@
 
 															<div class="space space-4"></div>
 
-															<a href="#" class="btn btn-sm btn-block btn-primary">
-																<i class="ace-icon fa fa-envelope-o bigger-110"></i>
-																<span class="bigger-110">Send a message</span>
-															</a>
+															 <label  class="label label-md label-primary"> 
+																
+																<span class="bigger-110">click on profile to edit </span>
+															</label>
 														</div><!-- /.col -->
 
 														<div class="col-xs-12 col-sm-9">
@@ -254,7 +255,7 @@
 													
 												</div><!-- /#home -->
 
-												<div id="feed" class="tab-pane">
+												<div id="uploads" class="tab-pane">
 													<div class="row">
 														<div class="col-xs-12 col-sm-8">
 															<div class="widget-box">
@@ -329,10 +330,13 @@
 
 													</div><!-- /#feed -->
 
-												<div id="friends" class="tab-pane">
-												<!-- PAGE CONTENT BEGINS -->
+												<div id="activity" class="tab-pane">
+													
+												
+													
+															<!-- PAGE CONTENT BEGINS -->
 															
-															
+															<br>
 															<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-md">View Placement Performance</a>
 															<div id="dialog-message" class="hide">
 																		<p>
@@ -343,6 +347,97 @@
 																		
 																		<div class="hr hr-12 hr-double"></div>
 															</div><!-- #dialog-message -->
+															
+															&nbsp;&nbsp;  &nbsp;
+															<a href="#" id="id-btn-dialog1" class="btn btn-primary btn-md right "> Send E-mail</a>
+															
+															&nbsp;&nbsp; &nbsp;
+															<a href="#" id="id-btn-dialog1" class="btn btn-warning btn-md right "> Add Candidates</a>
+															
+															<br><br>
+															<div class="col-xs-12 col-sm-12 center">
+																<div id="accordion" class="accordion-style1 panel-group">
+																	<div class="panel panel-inverse">
+																		<div class="panel-heading">
+																			<h4 class="panel-title">
+																				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+																					<i class="ace-icon fa fa-angle-down bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
+																					&nbsp;Add Student Tpc
+																				</a>
+																			</h4>
+																		</div>
+
+																		<div class="panel-collapse collapse in" id="collapseOne">
+																		 <div class="panel-body">
+																				<form:form class="form-inline">
+																					<!-- <div class="radio">
+																						<label>
+																							<input name="form-field-radio" type="radio" class="ace"  value="faculty"/>
+																							<span class="lbl"> Faculty  </span>
+																						</label>
+																					 </div>	 -->
+																								
+																					<div class="radio">
+																						<label>
+																							<input name="form-field-radio" type="radio" class="ace" value="student"/>
+																							<span class="lbl">  Student</span>
+																						</label>
+																					</div>
+																					<br><br>
+																					<!-- <div class="faculty box" style="display: none;" >
+																						<input type="text" id="form-field-1" placeholder=" Name of Faculty Member" class="col-xs-10 col-sm-8" /><br><br>
+																						<input type="text" id="form-field-1" placeholder=" Role" class="col-xs-10 col-sm-8" />
+																					</div>	 -->
+																					
+																					<div class="student box" style="display: none;" >
+																						<input type="text" id="form-field-1" placeholder=" Name of student TPC" class="col-xs-10 col-sm-8" />
+																					</div>	
+																					<br>
+																					<button type="submit" class="btn btn-info btn-md">
+																						<i class="ace-icon fa fa-key bigger-120"></i>Create
+																					</button>
+																				</form:form>
+
+																			</div>
+																		 
+																		</div>
+																	</div>
+
+																	<div class="panel panel-default">
+																		<div class="panel-heading">
+																			<h4 class="panel-title">
+																				<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+																					<i class="ace-icon fa fa-angle-right bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
+																					&nbsp;Remove Student  Tpc
+																				</a>
+																			</h4>
+																		</div>
+
+																		<div class="panel-collapse collapse" id="collapseTwo">
+																			<div class="panel-body">
+																				<form class="form-inline">
+																					<input type="text" class="input-large" placeholder="Name/ID of tpc" />
+																					
+																					<button type="button" class="btn btn-info btn-sm">
+																						<i class="ace-icon fa fa-key bigger-110"></i>Delete
+																					</button>
+																				</form		>
+
+																			</div>
+																		</div>
+																	</div>
+
+																		
+																	</div>
+		
+															<div>
+														</div>
+													</div>
+															
+															
+															<br><br>
+															
+															<div class="hr dotted"></div>
 															
 															<div class="row">
 																<div class="col-sm-9">
@@ -411,18 +506,26 @@
 
 												</div><!-- /#friends -->
 
-											</div><!-- /#pictures -->
+												<div id="notification" class="tab-pane">
+													
+												<div class="row">
+											
+													</div>
+
+												</div>
+												
+											</div><!-- /#notification -->
 											</div>
 										</div>
-									</div> <!--  END OF show-->
-								</div><!-- /.col -->
+									</div>
+								</div>
+
 						
 								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
 						</div><!-- /.row -->
-						</div><!-- page content -->
-					
-					</div><!-- /main-content-inner -->
-				</div><!-- main-content -->
+					</div><!-- /.page-content -->
+				</div>
 			
 
 <jsp:directive.include file="Footer.jsp" />
@@ -456,8 +559,27 @@
 		<script src="assets/js/ace-elements.min.js"></script>
 		<script src="assets/js/ace.min.js"></script>
 
-		<!-- inline scripts related to this page -->
+		<script type="text/css">
+		.box{
+				display: none;
+			}
+		</script>
 		<script type="text/javascript">
+		
+	/*** script for show /hide of addtpc section*/
+		 $(document).ready(function(){
+			$('input[type="radio"]').click(function(){
+				if($(this).attr("value")=="faculty"){
+					$(".box").not(".faculty").hide('fast');
+					$(".faculty").show('slow');
+				}
+				if($(this).attr("value")=="student"){
+					$(".box").not(".student").hide('fast');
+					$(".student").show('slow');
+				}
+			});
+		}); 
+		
 			jQuery(function($) {
 
 /* initialize the external events
