@@ -21,28 +21,84 @@
 	<jsp:directive.include file="Header.jsp" />
 	
 	<c:if test="${companyname=='jpmorgan'}">
-			<c:set var="propercompanyname" value="JP Morgan"/>  
+			<c:set var="propercompanyname" value="JP Morgan"/> 
+			<c:set var="color" value="orange"/> 
+			<c:set var="buttoncolor" value="warning"/>
+			<c:set var="jobcategory" value="Non-Dream"/>
+			<c:set var="jobdescription" value="DataBase expert"/>
+			<c:set var="skillsrequired" value="Angular,CSS,Java-Script"/>
+			<c:set var="ctc" value="5.5 Lakhs"/>
+			<c:set var="documentsrequired" value="University Marksheet"/>
 	</c:if>
 	<c:if test="${companyname=='directi'}">
 			<c:set var="propercompanyname" value="Direct i"/>  
+			<c:set var="color" value="red"/> 
+			<c:set var="buttoncolor" value="danger"/>
+			<c:set var="jobcategory" value="Dream"/>
+			<c:set var="jobdescription" value=" Developer"/>
+			<c:set var="skillsrequired" value="Java"/>
+			<c:set var="ctc" value="6 Lakhs"/>
+			<c:set var="documentsrequired" value="University Marksheet"/>
 	</c:if>
 	<c:if test="${companyname=='morganstanley'}">
 			<c:set var="propercompanyname" value="MorganStanley"/>  
+			<c:set var="color" value="green"/> 
+			<c:set var="buttoncolor" value="success"/>
+			<c:set var="jobcategory" value="Non-Dream"/>
+			<c:set var="jobdescription" value="UI- Developer"/>
+			<c:set var="skillsrequired" value="Angular,CSS,Java-Script"/>
+			<c:set var="ctc" value="3.6 Lakhs"/>
+			<c:set var="documentsrequired" value="University Marksheet"/>
 	</c:if>
 	<c:if test="${companyname=='larsentoubro'}">
-			<c:set var="propercompanyname" value="Larsen&Toubro"/>  
+			<c:set var="propercompanyname" value="Larsen&Toubro"/>
+			<c:set var="color" value="grey"/> 
+			<c:set var="buttoncolor" value="inverse"/>
+			<c:set var="jobcategory" value="Non-Dream"/>
+			<c:set var="jobdescription" value="Tester"/>
+			<c:set var="skillsrequired" value="Angular,CSS,Java-Script"/>
+			<c:set var="ctc" value="4.5 Lakhs"/>
+			<c:set var="documentsrequired" value="University Marksheet"/>  
 	</c:if>
 	<c:if test="${companyname=='accenture'}">
-			<c:set var="propercompanyname" value="Accenture"/>  
+			<c:set var="propercompanyname" value="Accenture"/>
+			<c:set var="color" value="orange"/> 
+			<c:set var="buttoncolor" value="warning"/>
+			<c:set var="jobcategory" value="Dream"/>
+			<c:set var="jobdescription" value="DataBase Expert"/>
+			<c:set var="skillsrequired" value="Java,MYSQL"/>
+			<c:set var="ctc" value="2.5 Lakhs"/>
+			<c:set var="documentsrequired" value="University Marksheet"/>  
 	</c:if>
 	<c:if test="${companyname=='godrej'}">
-			<c:set var="propercompanyname" value="Godrej"/>  
+			<c:set var="propercompanyname" value="Godrej"/>
+			<c:set var="color" value="blue"/> 
+			<c:set var="buttoncolor" value="primary"/>
+			<c:set var="jobcategory" value="Non-Dream"/>
+			<c:set var="jobdescription" value="Site Manager"/>
+			<c:set var="skillsrequired" value=" "/>
+			<c:set var="ctc" value="2.75 Lakhs"/>
+			<c:set var="documentsrequired" value="University Marksheet"/>  
 	</c:if>
 	<c:if test="${companyname=='zs'}">
-			<c:set var="propercompanyname" value="ZS"/>  
+			<c:set var="propercompanyname" value="ZS"/> 
+			<c:set var="color" value="red"/> 
+			<c:set var="buttoncolor" value="danger"/>
+			<c:set var="jobcategory" value="Non-Dream"/>
+			<c:set var="jobdescription" value="Developer"/>
+			<c:set var="skillsrequired" value="Java,Python "/>
+			<c:set var="ctc" value="7.75 Lakhs"/>
+			<c:set var="documentsrequired" value="Marksheet"/>   
 	</c:if>
 	<c:if test="${companyname=='tcs'}">
-			<c:set var="propercompanyname" value="TCS"/>  
+			<c:set var="propercompanyname" value="TCS"/> 
+			<c:set var="color" value="green"/> 
+			<c:set var="buttoncolor" value="success"/>
+			<c:set var="jobcategory" value="Dream"/>
+			<c:set var="jobdescription" value="UI-Developer"/>
+			<c:set var="skillsrequired" value="Java,Python,Photoshop "/>
+			<c:set var="ctc" value="3.75 Lakhs"/>
+			<c:set var="documentsrequired" value="University Marksheet"/>  
 	</c:if>
 
 	
@@ -176,21 +232,21 @@
 									<div class="tab-content no-border padding-24">
 										<div id="home" class="tab-pane in active">
 											<div class="row">
-																											<div class="pricing-span">
+														<div class="pricing-span">
 																<div
-																	class="widget-box pricing-box-small widget-color-orange">
+																	class="widget-box pricing-box-small widget-color-${color}">
 																	<div class="widget-header">
-																		<h5 class="widget-title bigger lighter">DataBase expert</h5>
+																		<h5 class="widget-title bigger lighter">${jobdescription}</h5>
 																	</div>
 
 																	<div class="widget-body">
 																		<div class="widget-main no-padding">
 																			<ul class="list-unstyled list-striped pricing-table">
-																				<li>Job Category: Non-Dream</li>
-																				<li>Job Description: </li>
-																				<li>Skills required: Angular,CSS,Java-Script</li>
-																				<li>CTC:5.5 Lakhs</li>
-																				<li>Documents Required: University Marksheet</li>
+																				<li>Job Category: ${jobcategory}</li>
+																				<li>Job Description:${jobdescription}</li>
+																				<li>Skills required: ${skillsrequired}</li>
+																				<li>CTC:${ctc}</li>
+																				<li>Documents Required:${documentsrequired}</li>
 																				
 
 																			</ul>
@@ -200,7 +256,7 @@
 
 																		<div>
 																			<a href="JobPostsCriteria?companyname=${companyname}"
-																				class="btn btn-block btn-sm btn-warning"> <span>Check Criteria</span>
+																				class="btn btn-block btn-sm btn-${buttoncolor}"> <span>Check Criteria</span>
 																			</a>
 																		</div>
 																	</div>

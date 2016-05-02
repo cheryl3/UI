@@ -20,28 +20,44 @@
 	<jsp:directive.include file="Header.jsp" />
 
 	<c:if test="${companyname=='jpmorgan'}">
-			<c:set var="propercompanyname" value="JP Morgan"/>  
+			<c:set var="propercompanyname" value="JP Morgan"/> 
+			<c:set var="color" value="orange"/> 
+			<c:set var="buttoncolor" value="warning"/>
 	</c:if>
 	<c:if test="${companyname=='directi'}">
 			<c:set var="propercompanyname" value="Direct i"/>  
+			<c:set var="color" value="red"/> 
+			<c:set var="buttoncolor" value="danger"/>
 	</c:if>
 	<c:if test="${companyname=='morganstanley'}">
 			<c:set var="propercompanyname" value="MorganStanley"/>  
+			<c:set var="color" value="green"/> 
+			<c:set var="buttoncolor" value="success"/>  
 	</c:if>
 	<c:if test="${companyname=='larsentoubro'}">
-			<c:set var="propercompanyname" value="Larsen&Toubro"/>  
+			<c:set var="propercompanyname" value="Larsen&Toubro"/>
+			<c:set var="color" value="grey"/> 
+			<c:set var="buttoncolor" value="inverse"/>  
 	</c:if>
 	<c:if test="${companyname=='accenture'}">
-			<c:set var="propercompanyname" value="Accenture"/>  
+			<c:set var="propercompanyname" value="Accenture"/>
+			<c:set var="color" value="orange"/> 
+			<c:set var="buttoncolor" value="warning"/>  
 	</c:if>
 	<c:if test="${companyname=='godrej'}">
-			<c:set var="propercompanyname" value="Godrej"/>  
+			<c:set var="propercompanyname" value="Godrej"/>
+			<c:set var="color" value="blue"/> 
+			<c:set var="buttoncolor" value="primary"/>  
 	</c:if>
 	<c:if test="${companyname=='zs'}">
-			<c:set var="propercompanyname" value="ZS"/>  
+			<c:set var="propercompanyname" value="ZS"/> 
+			<c:set var="color" value="red"/> 
+			<c:set var="buttoncolor" value="danger"/>  
 	</c:if>
 	<c:if test="${companyname=='tcs'}">
-			<c:set var="propercompanyname" value="TCS"/>  
+			<c:set var="propercompanyname" value="TCS"/> 
+			<c:set var="color" value="green"/> 
+			<c:set var="buttoncolor" value="success"/>  
 	</c:if>
 	
 		<div class="main-content">
@@ -175,7 +191,7 @@
 									<div class="tab-content no-border padding-24">
 										<div id="home" class="tab-pane in active">
 															
-										<div class="widget-box widget-color-orange">
+										<div class="widget-box widget-color-${color}">
 											<div class="widget-header">
 												<h5 class="widget-title bigger lighter">Job Crtieria</h5>
 											</div>
@@ -184,53 +200,53 @@
 												<div class="widget-main">
 													<ul class="list-unstyled spaced2">
 														<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Eligibible Branches are COMPS,IT,ELEX.
 														</li>
 
 														<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Only for unplaced students.
 														</li>
 
 														<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Eligible SSC percentage is 60
 														</li>
 														
 														<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Eligible HSC percentage is 50
 														</li>
 
 														<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Eligible CGPA is 6.75
 														</li>
 														
 															<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Year of passing should be 2017
 														</li>
 														
 															<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															No of live KT's allowed is 1
 														</li>
 														
 															<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															No of dead KT's allowed is 1
 														</li>
 														
 															<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Year gap is not allowed
 														</li>
 
 														
 														<li>
-															<i class="ace-icon fa  fa-circle orange"></i>
+															<i class="ace-icon fa  fa-circle ${color}"></i>
 															Last date to apply is 26/6/2016
 														</li>
 													</ul>
@@ -240,7 +256,7 @@
 												</div>
 
 												<div>
-													<a href="#" class="btn btn-block btn-warning">
+													<a href="#" class="btn btn-block btn-${buttoncolor}">
 														
 														<span>Apply</span>
 														<i class="ace-icon fa fa-arrow-right bigger-110"></i>
