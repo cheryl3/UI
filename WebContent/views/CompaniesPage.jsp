@@ -37,45 +37,45 @@
 								<ul class="ace-thumbnails ">
 									
 
-									<li><a href="Company1"> <img width="200" height="150"
-											alt="150x150" src="assets/images/companies/jpmorgan.jpg" href="company1" />
+									<li><a href="Company?companyname=jpmorgan"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/jpmorgan.jpg" href="Company" />
 										</a>
 										
 									</li>
-									<li><a href="Company2"> <img width="200" height="150"
+									<li><a href="Company?companyname=directi"> <img width="200" height="150"
 											alt="150x150" src="assets/images/companies/directi.jpg" />
 										</a>
 										
 									</li>
-									<li><a href="Company3"> <img width="200" height="150"
+									<li><a href="Company?companyname=morganstanley"> <img width="200" height="150"
 											alt="150x150" src="assets/images/companies/morganstanley.jpg" />
 										</a>
 										
 									</li>
-									<li><a href="Company4"> <img width="200" height="150"
-											alt="150x150" src="assets/images/companies/l&t.jpg" />
+									<li><a href="Company?companyname=larsentoubro"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/larsentoubro.jpg" />
 										</a>
 										
 									</li>
-									<li><a href="Company5"> <img width="200" height="150"
-											alt="150x150" src="assets/images/companies/accenture.png" />
+									<li><a href="Company?companyname=accenture"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/accenture.jpg" />
 										</a>
 										
 										
 									</li>
-									<li><a href="Company6"> <img width="200" height="150"
-											alt="150x150" src="assets/images/companies/godrej.png" />
+									<li><a href="Company?companyname=godrej"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/godrej.jpg" />
 										</a>
 										
 									</li>
-									<li><a href="Company7"> <img width="200" height="150"
+									<li><a href="Company?companyname=zs"> <img width="200" height="150"
 											alt="150x150" src="assets/images/companies/zs.jpg" />
 										</a>
 										
 									</li>
 								
-									<li><a href="Company8"> <img width="200" height="150"
-											alt="150x150" src="assets/images/companies/tcs.png" />
+									<li><a href="Company?companyname=tcs"> <img width="200" height="150"
+											alt="150x150" src="assets/images/companies/tcs.jpg" />
 										</a>
 										
 									</li>

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,6 +19,30 @@
 <body>
 	<jsp:directive.include file="Header.jsp" />
 
+	<c:if test="${companyname=='jpmorgan'}">
+			<c:set var="propercompanyname" value="JP Morgan"/>  
+	</c:if>
+	<c:if test="${companyname=='directi'}">
+			<c:set var="propercompanyname" value="Direct i"/>  
+	</c:if>
+	<c:if test="${companyname=='morganstanley'}">
+			<c:set var="propercompanyname" value="MorganStanley"/>  
+	</c:if>
+	<c:if test="${companyname=='larsentoubro'}">
+			<c:set var="propercompanyname" value="Larsen&Toubro"/>  
+	</c:if>
+	<c:if test="${companyname=='accenture'}">
+			<c:set var="propercompanyname" value="Accenture"/>  
+	</c:if>
+	<c:if test="${companyname=='godrej'}">
+			<c:set var="propercompanyname" value="Godrej"/>  
+	</c:if>
+	<c:if test="${companyname=='zs'}">
+			<c:set var="propercompanyname" value="ZS"/>  
+	</c:if>
+	<c:if test="${companyname=='tcs'}">
+			<c:set var="propercompanyname" value="TCS"/>  
+	</c:if>
 	
 		<div class="main-content">
 			<div class="main-content-inner">
@@ -33,8 +59,8 @@
 					<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a>
 					</li>
 
-					<li><a href="#">Companies</a></li>
-					<li><a href="#">TCS</a></li>
+					<li><a href="CompaniesPage">Companies</a></li>
+					<li><a href="Company?companyname=${companyname}">${propercompanyname}</a></li>
 					<li class="active">Job Applications</li>
 				</ul>
 				<!-- /.breadcrumb -->
@@ -131,7 +157,7 @@
 
 				<div class="page-header">
 					<h1>
-						TCS<small> <i
+						${propercompanyname} <small> <i
 							class="ace-icon fa fa-angle-double-right"></i> 
 						</small>
 					</h1>
@@ -192,16 +218,6 @@
 													</td>
 													<td>7187</td>
 													<td ><font color="green">Computer Science</font></td>												</tr>
-</tr>
-<tr>
-													
-													<td>
-														<font color="blue">Clinton Fernandes</font>
-													</td>
-													<td>6565</td>
-													<td ><font color="green">Computer Science</font></td>
-													
-												</tr>
 
 												<tr>
 													

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,6 +19,31 @@
 </head>
 <body>
 	<jsp:directive.include file="Header.jsp" />
+	
+	<c:if test="${companyname=='jpmorgan'}">
+			<c:set var="propercompanyname" value="JP Morgan"/>  
+	</c:if>
+	<c:if test="${companyname=='directi'}">
+			<c:set var="propercompanyname" value="Direct i"/>  
+	</c:if>
+	<c:if test="${companyname=='morganstanley'}">
+			<c:set var="propercompanyname" value="MorganStanley"/>  
+	</c:if>
+	<c:if test="${companyname=='larsentoubro'}">
+			<c:set var="propercompanyname" value="Larsen&Toubro"/>  
+	</c:if>
+	<c:if test="${companyname=='accenture'}">
+			<c:set var="propercompanyname" value="Accenture"/>  
+	</c:if>
+	<c:if test="${companyname=='godrej'}">
+			<c:set var="propercompanyname" value="Godrej"/>  
+	</c:if>
+	<c:if test="${companyname=='zs'}">
+			<c:set var="propercompanyname" value="ZS"/>  
+	</c:if>
+	<c:if test="${companyname=='tcs'}">
+			<c:set var="propercompanyname" value="TCS"/>  
+	</c:if>
 
 	
 		<div class="main-content">
@@ -34,8 +61,8 @@
 					<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a>
 					</li>
 
-					<li><a href="#">Companies</a></li>
-					<li><a href="#">Morgan Stanley</a></li>
+					<li><a href="CompaniesPage">Companies</a></li>
+					<li><a href="Company?companyname=${companyname}">${propercompanyname}</a></li>
 					<li class="active">Job Posts</li>
 				</ul>
 				<!-- /.breadcrumb -->
@@ -132,7 +159,7 @@
 
 				<div class="page-header">
 					<h1>
-					Morgan Stanley<small> <i
+						${propercompanyname} <small> <i
 							class="ace-icon fa fa-angle-double-right"></i> 
 						</small>
 					</h1>
@@ -149,133 +176,7 @@
 									<div class="tab-content no-border padding-24">
 										<div id="home" class="tab-pane in active">
 											<div class="row">
-												
-															<div class="pricing-span">
-																<div
-																	class="widget-box pricing-box-small widget-color-green">
-																	<div class="widget-header">
-																		<h5 class="widget-title bigger lighter">UI-Developer</h5>
-																	</div>
-
-																	<div class="widget-body">
-																		<div class="widget-main no-padding">
-																			<ul class="list-unstyled list-striped pricing-table">
-																			
-																				<li>Job Category:     Non-Dream</li>
-																				<li>Skills required: Angular,CSS,Java-Script</li>
-																				<li>CTC:3.5 Lakhs</li>
-																				<li>Documents Required: University Marksheet</li>
-																				
-
-																			</ul>
-
-																			
-																		</div>
-
-																		<div>
-																			<a href="JobPostsCriteria"
-																				class="btn btn-block btn-sm btn-success"> <span>Check Criteria</span>
-																			</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															
-															<div class="pricing-span">
-																<div
-																	class="widget-box pricing-box-small widget-color-blue">
-																	<div class="widget-header">
-																		<h5 class="widget-title bigger lighter">Manager</h5>
-																	</div>
-
-																	<div class="widget-body">
-																		<div class="widget-main no-padding">
-																			<ul class="list-unstyled list-striped pricing-table">
-																			
-																				<li>Job Category:     Non-Dream</li>
-																				<li>Skills required: Angular,CSS,Java-Script</li>
-																				<li>CTC:7.5 Lakhs</li>
-																				<li>Documents Required: University Marksheet</li>
-																				
-
-																			</ul>
-
-																			
-																		</div>
-
-																		<div>
-																			<a href="JobPostsCriteria"
-																				class="btn btn-block btn-sm btn-primary"> <span>Check Criteria</span>
-																			</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-
-
-
-															<div class="pricing-span">
-																<div
-																	class="widget-box pricing-box-small widget-color-red">
-																	<div class="widget-header">
-																		<h5 class="widget-title bigger lighter">Developer</h5>
-																	</div>
-
-																	<div class="widget-body">
-																		<div class="widget-main no-padding">
-																			<ul class="list-unstyled list-striped pricing-table">
-																				<li>Job Category:<br/>Dream</li>
-																				<li>Skills required:<br/>Java</li>
-																				<li>CTC:6 Lakhs</li>
-																				<li>Documents Required: University Marksheet</li>
-																				
-																			</ul>
-
-																			
-																		</div>
-
-																		<div>
-																			<a href="JobPostsCriteria"
-																				class="btn btn-block btn-sm btn-danger"> <span>Check Criteria</span>
-																			</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															
-															
-															
-																														<div class="pricing-span">
-																<div
-																	class="widget-box pricing-box-small widget-color-grey">
-																	<div class="widget-header">
-																		<h5 class="widget-title bigger lighter">Tester</h5>
-																	</div>
-
-																	<div class="widget-body">
-																		<div class="widget-main no-padding">
-																			<ul class="list-unstyled list-striped pricing-table">
-																				<li>Job Category: Non-Dream</li>
-																				<li>Skills required: Java J-Unit Testing</li>
-																				<li>CTC:4.5 Lakhs</li>
-																				<li>Documents Required: University Marksheet</li>
-																				
-
-																			</ul>
-
-																			
-																		</div>
-
-																		<div>
-																			<a href="JobPostsCriteria"
-																				class="btn btn-block btn-sm btn-inverse"> <span>Check Criteria</span>
-																			</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-
-															<div class="pricing-span">
+																											<div class="pricing-span">
 																<div
 																	class="widget-box pricing-box-small widget-color-orange">
 																	<div class="widget-header">
@@ -286,6 +187,7 @@
 																		<div class="widget-main no-padding">
 																			<ul class="list-unstyled list-striped pricing-table">
 																				<li>Job Category: Non-Dream</li>
+																				<li>Job Description: </li>
 																				<li>Skills required: Angular,CSS,Java-Script</li>
 																				<li>CTC:5.5 Lakhs</li>
 																				<li>Documents Required: University Marksheet</li>
@@ -297,7 +199,7 @@
 																		</div>
 
 																		<div>
-																			<a href="JobPostsCriteria"
+																			<a href="JobPostsCriteria?companyname=${companyname}"
 																				class="btn btn-block btn-sm btn-warning"> <span>Check Criteria</span>
 																			</a>
 																		</div>
