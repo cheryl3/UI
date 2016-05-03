@@ -147,8 +147,8 @@
 				</div>
 				<!-- /.page-header -->
 				<div class="alert alert-danger">
-					<i class="ace-icon fa fa-hand-o-right"></i> Please note that in
-					some cases if the values aren't filled, the default values in the
+					<i class="ace-icon fa fa-hand-o-right"></i> Please note: In
+					some cases if the values aren't filled or changed, the default values in the
 					field will be considered.
 					<button class="close" data-dismiss="alert">
 						<i class="ace-icon fa fa-times"></i>
@@ -174,35 +174,35 @@
 
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-1">Company Name</label>
+																for="name">Company Name</label>
 
 															<div class="col-sm-3">
-																<span class="input-icon"> <input type="text"
-																	id="form-field-icon-1" />
-																</span>
+																<div class="clearfix">
+																	<input type="text" id="name" name="name" />
+																</div>
 
 															</div>
 														</div>
-														
+
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-1">Job Id</label>
+																for="job">Job Id</label>
 
 															<div class="col-sm-3">
-																<span class="input-icon"> <input type="text"
-																	id="form-field-icon-1" />
-																</span>
+																<div class="clearfix">
+																	<input type="text" id="job" name="job" />
+																</div>
 
 															</div>
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-1">Company Id</label>
+																for="companyid">Company Id</label>
 
 															<div class="col-sm-3">
-																<span class="input-icon"> <input type="text"
-																	id="form-field-icon-1" />
-																</span>
+																<div class="clearfix">
+																	<input type="text" id="companyid" name="companyid" />
+																</div>
 
 															</div>
 														</div>
@@ -216,22 +216,22 @@
 													<div class="row">
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-10">Skills Required</label>
+																for="skills">Skills Required</label>
 
 															<div class="col-sm-3">
 																<div class="inline">
-																	<input type="text" name="tags" id="form-field-tags"
+																	<input type="text" name="skills" id="form-field-tags"
 																		placeholder="Enter the skills" />
 																</div>
 															</div>
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-11">Documents Required</label>
+																for="documents">Documents Required</label>
 
 															<div class="col-sm-3">
 																<div class="inline">
-																	<input type="text" name="tags" id="form-field-tags2"
+																	<input type="text" name="documents" id="form-field-tags2"
 																		placeholder="Enter the documents" />
 																</div>
 															</div>
@@ -240,11 +240,12 @@
 
 
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-8">Job Description</label>
+																for="comment1">Job Description</label>
 															<div class="col-sm-3">
-
-																<textarea id="form-field-11"
-																	class="autosize-transition form-control"></textarea>
+																<div class="clearfix">
+																	<textarea class="autosize-transition form-control"
+																		name="comment1" id="comment1"></textarea>
+																</div>
 															</div>
 
 														</div>
@@ -257,21 +258,21 @@
 													<div class="row">
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-1">Event Id</label>
+																for="eventid">Event Id</label>
 
 															<div class="col-sm-3">
-																<span class="input-icon"> <input type="text"
-																	id="form-field-icon-1" />
-																</span>
+																<div class="clearfix">
+																	<input type="text" id="eventid" name="eventid" />
+																</div>
 
 															</div>
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-8">C.T.C</label>
+																for="ctc">C.T.C</label>
 															<div class="col-sm-3">
 																<div>
-																	<input type="text" id="spinner1" />
+																	<input type="text" id="spinner1" name="ctc"/>
 																	<div class="space-6"></div>
 
 																</div>
@@ -281,10 +282,12 @@
 
 
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-8">Company Address</label>
+																for="comment">Company Address</label>
 															<div class="col-sm-3">
-
-																<textarea id="form-field-11" class="form-control"></textarea>
+																<div class="clearfix">
+																	<textarea class="form-control" name="comment"
+																		id="comment"></textarea>
+																</div>
 															</div>
 
 														</div>
@@ -302,10 +305,10 @@
 
 
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-12">Created Date</label>
+																for="createddate">Created Date</label>
 															<div class="col-sm-3">
 																<div class="input-group input-group-sm">
-																	<input type="text" id="datepicker" class="form-control" />
+																	<input name="createddate" type="text" id="datepicker" class="form-control" />
 																	<span class="input-group-addon"> <i
 																		class="ace-icon fa fa-calendar"></i>
 																	</span>
@@ -318,10 +321,10 @@
 
 
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-12">Modified Date</label>
+																for="modifieddate">Modified Date</label>
 															<div class="col-sm-3">
 																<div class="input-group input-group-sm">
-																	<input type="text" id="datepicker1"
+																	<input name="modifieddate" type="text" id="datepicker1"
 																		class="form-control" /> <span
 																		class="input-group-addon"> <i
 																		class="ace-icon fa fa-calendar"></i>
@@ -335,10 +338,10 @@
 
 
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-12">Drive Date</label>
+																for="drivedate">Drive Date</label>
 															<div class="col-sm-3">
 																<div class="input-group input-group-sm">
-																	<input type="text" id="datepicker2"
+																	<input name="drivedate" type="text" id="datepicker2"
 																		class="form-control" /> <span
 																		class="input-group-addon"> <i
 																		class="ace-icon fa fa-calendar"></i>
@@ -357,34 +360,35 @@
 
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-1">Created By</label>
+																for="createdby">Created By</label>
 
 															<div class="col-sm-3">
-																<span class="input-icon"> <input type="text"
-																	id="form-field-icon-1" />
-																</span>
+																<div class="clearfix">
+																	<input type="text" id="createdby" name="createdby" />
+																</div>
 
 															</div>
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-1">Modified By</label>
+																for="modifiedby">Modified By</label>
 
 															<div class="col-sm-3">
-																<span class="input-icon"> <input type="text"
-																	id="form-field-icon-1" />
-																</span>
+																<div class="clearfix">
+																	<input type="text" id="modifiedby" name="modifiedby" />
+																</div>
 
 															</div>
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-6">Job Category</label>
+																for="jobcategory">Job Category</label>
 															<div class="col-sm-2">
 
 																<div>
 
-																	<select class="chosen-select">
+																	<select name="jobcategory" class="chosen-select">
+																	<option ></option>
 																		<option value="ND">NonDream</option>
 																		<option value="DR">Dream</option>
 																		<option value="SD">SuperDream</option>
@@ -414,21 +418,21 @@
 													<div class="row">
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-1">Criteria Id</label>
+																for="criteriaid">Criteria Id</label>
 
 															<div class="col-sm-3">
-																<span class="input-icon"> <input type="text"
-																	id="form-field-icon-1" />
-																</span>
+																<div class="clearfix">
+																	<input type="text" id="criteriaid" name="criteriaid" />
+																</div>
 
 															</div>
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-13">Eligible Branches</label>
+																for="eligiblebranches">Eligible Branches</label>
 															<div class="col-sm-3">
 																<div>
-																	<select class="chosen-select form-control"
+																	<select name="eligiblebranches" class="chosen-select form-control"
 																		multiple="Eligible Branches">
 																		<option value="CS">Computers</option>
 																		<option value="IT">Info.Tech</option>
@@ -443,10 +447,10 @@
 
 
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-8">Year of Passing</label>
+																for="yop">Year of Passing</label>
 															<div class="col-sm-3">
 																<div>
-																	<select class="form-control" id="form-field-select-1">
+																	<select class="form-control" id="yop" name="yop">
 																		<option value=""></option>
 																		<option value="2017">2017</option>
 																		<option value="2018">2018</option>
@@ -514,7 +518,7 @@
 
 																	<div class="knob-container inline">
 																		<input type="text" class="input-small knob"
-																			value="6.0" data-min="0" data-max="10"
+																			value="5.0" data-min="0" data-max="10"
 																			data-step="0.01" data-width="120" data-height="120"
 																			data-thickness=".3" data-fgcolor="#47d05e" />
 																	</div>
@@ -549,10 +553,10 @@
 
 
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-12">Last Date to Apply</label>
+																for="lastdatetoapply">Last Date to Apply</label>
 															<div class="col-sm-3">
 																<div class="input-group input-group-sm">
-																	<input type="text" id="datepicker3"
+																	<input name="lastdatetoapply" type="text" id="datepicker3"
 																		class="form-control" /> <span
 																		class="input-group-addon"> <i
 																		class="ace-icon fa fa-calendar"></i>
@@ -584,10 +588,10 @@
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-18">No of live KT's allowed </label>
+																for="live">No of live KT's allowed </label>
 															<div class="col-sm-3">
 																<div>
-																	<input type="text" id="spinner11" />
+																	<input name="live" type="text" id="spinner11" />
 																	<div class="space-6"></div>
 																</div>
 															</div>
@@ -595,23 +599,35 @@
 														</div>
 														<div class="form-group">
 															<label class="col-sm-1 control-label no-padding-right"
-																for="form-field-18">No of dead KT's allowed </label>
+																for="dead">No of dead KT's allowed </label>
 															<div class="col-sm-3">
 																<div>
-																	<input type="text" id="spinner22" />
+																	<input name="dead" type="text" id="spinner22" />
 																	<div class="space-6"></div>
 																</div>
 															</div>
 
 														</div>
-														
+
 														<div class="clearfix actions">
 															<!-- edited clearfix form-actions -->
 
-															<div class="col-md-offset-4 col-md-9">
+															<!-- <div class="col-md-offset-4 col-md-9">
 																<button onclick="location.href = 'ViewJob.jsp';"
-																	class="btn btn-info" type="button">
+																	class="btn btn-info btn-next" type="button" data-last="Finish">
 																	<i class="ace-icon fa fa-check bigger-110"></i> Submit
+																</button>
+
+																&nbsp; &nbsp; &nbsp;
+																<button class="btn" type="reset">
+																	<i class="ace-icon fa fa-undo bigger-110"></i> Reset
+																</button>
+															</div> -->
+															<div class="col-md-offset-4 col-md-9">
+																<button class="btn btn-info btn-next"
+																	data-last="Finish">
+																	<i class="ace-icon fa fa-check bigger-110"></i>
+																	Submit 
 																</button>
 
 																&nbsp; &nbsp; &nbsp;
@@ -620,6 +636,7 @@
 																</button>
 															</div>
 														</div>
+
 														<div class="hr hr-8 dotted"></div>
 											</form>
 
@@ -648,7 +665,7 @@
 	</div>
 	<!-- /.page-content -->
 	</div>
-	
+
 
 	<!--[if !IE]> -->
 	<script src="assets/js/jquery.2.1.1.min.js"></script>
@@ -704,7 +721,7 @@
 	<script src="assets/js/daterangepicker.min.js"></script>
 	<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 	<script src="assets/js/jquery.validate.min.js"></script>
-	
+
 	<script src="assets/js/bootstrap-colorpicker.min.js"></script>
 	<script src="assets/js/jquery.knob.min.js"></script>
 	<script src="assets/js/jquery.autosize.min.js"></script>
@@ -1366,200 +1383,249 @@
 		});
 	</script>
 	<script type="text/javascript">
-			jQuery(function($) {
-			
-				$('[data-rel=tooltip]').tooltip();
-			
-				$(".select2").css('width','200px').select2({allowClear:true})
-				.on('change', function(){
-					$(this).closest('form').validate().element($(this));
-				}); 
-			
-			
-				var $validation = false;
-				$('#fuelux-wizard-container')
-				.ace_wizard({
+		jQuery(function($) {
+
+			var $validation = false;
+			$('#fuelux-wizard-container')
+					.ace_wizard({
 					//step: 2 //optional argument. wizard will jump to step "2" at first
 					//buttons: '.wizard-actions:eq(0)'
-				})
-				.on('actionclicked.fu.wizard' , function(e, info){
-					if(info.step == 1 && $validation) {
-						if(!$('#validation-form').valid()) e.preventDefault();
-					}
-				})
-				.on('finished.fu.wizard', function(e) {
-					bootbox.dialog({
-						message: "Thank you! Your information was successfully saved!", 
-						buttons: {
-							"success" : {
-								"label" : "OK",
-								"className" : "btn-sm btn-primary"
-							}
+					})
+					.on('actionclicked.fu.wizard', function(e, info) {
+						if (info.step == 1 && $validation) {
+							if (!$('#validation-form').valid())
+								e.preventDefault();
 						}
+					})
+					.on(
+							'finished.fu.wizard',
+							function(e) {
+								bootbox
+										.dialog({
+											message : "Thank you! Your information was successfully saved!",
+											buttons : {
+												"success" : {
+													"label" : "OK",
+													"className" : "btn-sm btn-primary"
+												}
+											}
+										});
+							}).on('stepclick.fu.wizard', function(e) {
+						//e.preventDefault();//this will prevent clicking and selecting steps
 					});
-				}).on('stepclick.fu.wizard', function(e){
-					//e.preventDefault();//this will prevent clicking and selecting steps
-				});
-			
-			
-				//jump to a step
-				/**
-				var wizard = $('#fuelux-wizard-container').data('fu.wizard')
-				wizard.currentStep = 3;
-				wizard.setState();
-				*/
-			
-				//determine selected step
-				//wizard.selectedItem().step
-			
-			
-			
-				//hide or show the other form which requires validation
-				//this is for demo only, you usullay want just one form in your application
-				$('#skip-validation').removeAttr('checked').on('click', function(){
-					$validation = this.checked;
-					if(this.checked) {
-						$('#sample-form').hide();
-						$('#validation-form').removeClass('hide');
-					}
-					else {
-						$('#validation-form').addClass('hide');
-						$('#sample-form').show();
-					}
-				})
-			
-			
-			
-				//documentation : http://docs.jquery.com/Plugins/Validation/validate
-			
-			
-				$.mask.definitions['~']='[+-]';
-				$('#phone').mask('(999) 999-9999');
-			
-				jQuery.validator.addMethod("phone", function (value, element) {
-					return this.optional(element) || /^\(\d{3}\) \d{3}\-\d{4}( x\d{1,6})?$/.test(value);
-				}, "Enter a valid phone number.");
-			
-				$('#validation-form').validate({
-					errorElement: 'div',
-					errorClass: 'help-block',
-					focusInvalid: false,
-					ignore: "",
-					rules: {
-						email: {
-							required: true,
-							email:true
-						},
-						password: {
-							required: true,
-							minlength: 5
-						},
-						password2: {
-							required: true,
-							minlength: 5,
-							equalTo: "#password"
-						},
-						name: {
-							required: true
-						},
-						phone: {
-							required: true,
-							phone: 'required'
-						},
-						url: {
-							required: true,
-							url: true
-						},
-						comment: {
-							required: true
-						},
-						state: {
-							required: true
-						},
-						platform: {
-							required: true
-						},
-						subscription: {
-							required: true
-						},
-						gender: {
-							required: true,
-						},
-						agree: {
-							required: true,
-						}
-					},
-			
-					messages: {
-						email: {
-							required: "Please provide a valid email.",
-							email: "Please provide a valid email."
-						},
-						password: {
-							required: "Please specify a password.",
-							minlength: "Please specify a secure password."
-						},
-						state: "Please choose state",
-						subscription: "Please choose at least one option",
-						gender: "Please choose gender",
-						agree: "Please accept our policy"
-					},
-			
-			
-					highlight: function (e) {
-						$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
-					},
-			
-					success: function (e) {
-						$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
-						$(e).remove();
-					},
-			
-					errorPlacement: function (error, element) {
-						if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
-							var controls = element.closest('div[class*="col-"]');
-							if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
-							else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
-						}
-						else if(element.is('.select2')) {
-							error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
-						}
-						else if(element.is('.chosen-select')) {
-							error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
-						}
-						else error.insertAfter(element.parent());
-					},
-			
-					submitHandler: function (form) {
-					},
-					invalidHandler: function (form) {
-					}
-				});
-			
-				
-				
-				
-				$('#modal-wizard-container').ace_wizard();
-				$('#modal-wizard .wizard-actions .btn[data-dismiss=modal]').removeAttr('disabled');
-				
-				
-				/**
-				$('#date').datepicker({autoclose:true}).on('changeDate', function(ev) {
-					$(this).closest('form').validate().element($(this));
-				});
-				
-				$('#mychosen').chosen().on('change', function(ev) {
-					$(this).closest('form').validate().element($(this));
-				});
-				*/
-				
-				
-				$(document).one('ajaxloadstart.page', function(e) {
-					//in ajax mode, remove remaining elements before leaving page
-					$('[class*=select2]').remove();
-				});
+
+			//hide or show the other form which requires validation
+			//this is for demo only, you usullay want just one form in your application
+			$('#skip-validation').removeAttr('checked').on('click', function() {
+				$validation = this.checked;
+				if (this.checked) {
+					$('#sample-form').hide();
+					$('#validation-form').removeClass('hide');
+				} else {
+					$('#validation-form').addClass('hide');
+					$('#sample-form').show();
+				}
 			})
-		</script>
-	
+
+			//documentation : http://docs.jquery.com/Plugins/Validation/validate
+
+			$.mask.definitions['~'] = '[+-]';
+			$('#phone').mask('(999) 999-9999');
+
+			jQuery.validator.addMethod("phone", function(value, element) {
+				return this.optional(element)
+						|| /^\(\d{3}\) \d{3}\-\d{4}( x\d{1,6})?$/.test(value);
+			}, "Enter a valid phone number.");
+
+			$('#validation-form')
+					.validate(
+							{
+								errorElement : 'div',
+								errorClass : 'help-block',
+								focusInvalid : false,
+								ignore : "",
+								rules : {
+									email : {
+										required : true,
+										email : true
+									},
+									password : {
+										required : true,
+										minlength : 5
+									},
+									password2 : {
+										required : true,
+										minlength : 5,
+										equalTo : "#password"
+									},
+									name : {
+										required : true
+									},
+									phone : {
+										required : true,
+										phone : 'required'
+									},
+									url : {
+										required : true,
+										url : true
+									},
+									comment : {
+										required : true
+									},
+									comment1 : {
+										required : true
+									},
+									yop : {
+										required : true
+									},
+									platform : {
+										required : true
+									},
+									subscription : {
+										required : true
+									},
+									gender : {
+										required : true,
+									},
+									agree : {
+										required : true,
+									},
+									job : {
+										required : true,
+									},
+									companyid : {
+										required : true,
+										isnumeric : true
+									},
+									eventid : {
+										required : true,
+									},
+									createdby : {
+										required : true,
+									},
+									modifiedby : {
+										required : true,
+									},
+									criteriaid : {
+										required : true,
+									},
+									skills : {
+										required : true,
+									},
+									documents : {
+										required : true,
+									},
+									ctc : {
+										required : true,
+									},
+									createddate : {
+										required : true,
+									},
+									modifieddate : {
+										required : true,
+									},
+									drivedate : {
+										required : true,
+									},
+									jobcategory : {
+										required : true,
+									},
+									eligiblebranches : {
+										required : true,
+									},
+									lastdatetoapply : {
+										required : true,
+									},
+									live : {
+										required : true,
+									},
+									dead : {
+										required : true,
+									}
+								},
+
+								messages : {
+									email : {
+										required : "Please provide a valid email.",
+										email : "Please provide a valid email."
+									},
+									password : {
+										required : "Please specify a password.",
+										minlength : "Please specify a secure password."
+									},
+									yop : "Please choose an year of passing",
+									subscription : "Please choose at least one option",
+									gender : "Please choose gender",
+									agree : "Please accept our policy",
+									skills : "Please enter atleast one skill",
+									name : "Please Enter the Company name",
+									documents : "Please Enter the Document to be carried",
+									ctc : "Please Enter a C.T.C",
+									createddate : "Please Enter a Valid Date",
+									modifieddate : "Please Enter a Valid Date",
+									drivedate : "Please Enter a Valid Date",
+									jobcategory : "Please select a Job Category",
+									eligiblebranches : "Select atleast one eligible branch",
+									lastdatetoapply : "Please Enter a Valid Date",
+									live : "Please specify a number",
+									dead : "Please specify a number"
+								},
+
+								highlight : function(e) {
+									$(e).closest('.form-group').removeClass(
+											'has-info').addClass('has-error');
+								},
+
+								success : function(e) {
+									$(e).closest('.form-group').removeClass(
+											'has-error');//.addClass('has-info');
+									$(e).remove();
+								},
+
+								errorPlacement : function(error, element) {
+									if (element.is('input[type=checkbox]')
+											|| element.is('input[type=radio]')) {
+										var controls = element
+												.closest('div[class*="col-"]');
+										if (controls.find(':checkbox,:radio').length > 1)
+											controls.append(error);
+										else
+											error.insertAfter(element.nextAll(
+													'.lbl:eq(0)').eq(0));
+									} else if (element.is('.select2')) {
+										error
+												.insertAfter(element
+														.siblings('[class*="select2-container"]:eq(0)'));
+									} else if (element.is('.chosen-select')) {
+										error
+												.insertAfter(element
+														.siblings('[class*="chosen-container"]:eq(0)'));
+									} else
+										error.insertAfter(element.parent());
+								},
+
+								submitHandler : function(form) {
+								},
+								invalidHandler : function(form) {
+								}
+							});
+
+			$('#modal-wizard-container').ace_wizard();
+			$('#modal-wizard .wizard-actions .btn[data-dismiss=modal]')
+					.removeAttr('disabled');
+
+			/**
+			$('#date').datepicker({autoclose:true}).on('changeDate', function(ev) {
+				$(this).closest('form').validate().element($(this));
+			});
+			
+			$('#mychosen').chosen().on('change', function(ev) {
+				$(this).closest('form').validate().element($(this));
+			});
+			 */
+
+		})
+	</script>
+
 </body>
 </html>
