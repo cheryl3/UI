@@ -2,7 +2,9 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
 
+</head>
 
 <body class="skin-3 no-skin">
 	<jsp:directive.include file="scripts.jsp" />
@@ -17,7 +19,7 @@
 					<span class="sr-only">Toggle sidebar</span>
 
 					<span class="icon-bar"></span>
-	
+
 					<span class="icon-bar"></span>
 
 					<span class="icon-bar"></span>
@@ -34,7 +36,7 @@
 
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="grey">
+						<!-- <li class="grey">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-tasks"></i>
 								<span class="badge badge-grey">4</span>
@@ -110,7 +112,7 @@
 								</li>
 							</ul>
 						</li>
-
+ -->
 						<li class="purple">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-bell icon-animated-bell"></i>
@@ -179,7 +181,7 @@
 							</ul>
 						</li>
 
-						<li class="green">
+						<!-- <li class="green">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
 								<span class="badge badge-success">5</span>
@@ -287,14 +289,14 @@
 									</a>
 								</li>
 							</ul>
-						</li>
+						</li> -->
 
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Jason
+									<core:out value="${loginForm.userName}" />
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
@@ -318,9 +320,9 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="form">
 										<i class="ace-icon fa fa-power-off"></i>
-										Logout
+										Logout 
 									</a>
 								</li>
 							</ul>
@@ -331,7 +333,7 @@
 		</div>
 		
 		<!-- basic scripts -->
-		<jsp:directive.include file="sidebarstudent.jsp" />
+		<jsp:directive.include file="sidebar.jsp" />
 
 		
 </body>
