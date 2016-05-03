@@ -158,5 +158,10 @@ public class MainController {
 		model.addObject("companyname", request.getParameter("companyname"));
 		return model;
 	}
+	
+	@RequestMapping("/addJobPost")
+	public String addjobpost() {
+		return "addJobPost";
+	}
 
 }
