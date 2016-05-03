@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="UTF-8"%>
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,15 +17,22 @@
 		
 		<link rel="stylesheet" href="assets/css/select2.min.css" />
 		
+		
 		<!-- <link rel="stylesheet" href="assets/css/bootstrap-multiselect.min.css" /> -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
 		
-		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		
 		<!-- page specific plugin for calander styles -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
 		<link rel="stylesheet" href="assets/css/fullcalendar.min.css" />
 		<script src="assets/js/ace-extra.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		
+		
+		<!--  script for smooth scrolling 
+			
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
+		
+		-->
 		
 		
 </head>
@@ -38,7 +47,7 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
-						<ul class="breadcrumb">
+						<!-- <ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
@@ -48,7 +57,7 @@
 								<a href="#">More Pages</a>
 							</li>
 							<li class="active">User Profile</li>
-						</ul><!-- /.breadcrumb -->
+						</ul>/.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
@@ -62,11 +71,8 @@
 					<div class="page-content">
 							<div class="page-header">
 							<h1>
-								User Profile Page
-								<small>
-									<i class="ace-icon fa fa-angle-double-right"></i>
-									3 styles with inline editable feature
-								</small>
+								Profile Page
+								
 							</h1>
 							</div><!-- /.page-header -->
 
@@ -74,7 +80,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="clearfix">
-									<div class="pull-left alert alert-success no-margin">
+									<!-- <div class="pull-left alert alert-success no-margin">
 										<button type="button" class="close" data-dismiss="alert">
 											<i class="ace-icon fa fa-times"></i>
 										</button>
@@ -82,8 +88,8 @@
 										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
 										Click on the image below or on profile fields to edit them ...
 									</div>
-
-									<div class="pull-right">
+ -->
+									<!-- <div class="pull-right">
 										<span class="green middle bolder">Choose profile: &nbsp;</span>
 
 										<div class="btn-toolbar inline middle no-margin">
@@ -107,10 +113,10 @@
 												</label>
 											</div>
 										</div>
-									</div>
+									</div> -->
 								</div>
 
-								<div class="hr dotted"></div>
+								<!-- <div class="hr dotted"></div> -->
 
 							<div class="show">
 									<div id="user-profile-2" class="user-profile">
@@ -124,22 +130,22 @@
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#managejobs">
+													<a data-toggle="tab" href="#activity">
 														<i class="orange ace-icon fa fa-rss bigger-120"></i>
-														Manage jobs for students
+														Activity
 													</a>
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#placement">
+													<a data-toggle="tab" href="#uploads">
 														<i class="blue ace-icon fa fa-users bigger-120"></i>
-														Placement Details..
+														Uploads
 													</a>
 												</li>
 												<li>
-													<a data-toggle="tab" href="#addtpc">
+													<a data-toggle="tab" href="#notification">
 														<i class="pink ace-icon fa fa-picture-o bigger-120"></i>
-														Add Tpc's
+														Notification
 													</a>
 												</li>
 
@@ -155,15 +161,11 @@
 
 															<div class="space space-4"></div>
 
-															<a href="#" class="btn btn-sm btn-block btn-primary">
-																<i class="ace-icon fa fa-envelope-o bigger-110"></i>
-																<span class="bigger-110">Send a message</span>
-															</a>
 														</div><!-- /.col -->
 
 														<div class="col-xs-12 col-sm-9">
 															<h4 class="blue">
-																<span class="middle">Alex M. Doe</span>
+																
 
 																<span class="label label-purple arrowed-in-right">
 																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
@@ -176,38 +178,35 @@
 																	<div class="profile-info-name"> Username </div>
 
 																	<div class="profile-info-value">
-																		<span>alexdoe</span>
+																		<span><core:out value="${loginForm.userName}" /> </span>
 																	</div>
 																</div>
+
+
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Role: </div>
+
+																	<div class="profile-info-value">
+																		
+																		<span>Traning and Placement Organizer</span>
+																		
+																	</div>
+																</div> 
 																
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Role </div>
+																	<div class="profile-info-name"> Current Account Status: </div>
 
 																	<div class="profile-info-value">
-																		<span>Faculty TPC (Room Allocation Incharge)</span>
+																		
+																		<span>Active</span>
+																		
 																	</div>
 																</div>
 
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Location </div>
-
-																	<div class="profile-info-value">
-																		<i class="fa fa-map-marker light-orange bigger-110"></i>
-																		<span>Netherlands</span>
-																		<span>Amsterdam</span>
-																	</div>
-																</div>
+																
 
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Age </div>
-
-																	<div class="profile-info-value">
-																		<span>38</span>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Joined </div>
+																	<div class="profile-info-name"> Date Joined/Created:  </div>
 
 																	<div class="profile-info-value">
 																		<span>2010/06/20</span>
@@ -215,7 +214,7 @@
 																</div>
 
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Last Online </div>
+																	<div class="profile-info-name"> Last Login </div>
 
 																	<div class="profile-info-value">
 																		<span>3 hours ago</span>
@@ -225,35 +224,7 @@
 
 															<div class="hr hr-8 dotted"></div>
 
-															<div class="profile-user-info">
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Website </div>
-
-																	<div class="profile-info-value">
-																		<a href="#" target="_blank">www.alexdoe.com</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-facebook-square bigger-150 blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Find me on Facebook</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-twitter-square bigger-150 light-blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Follow me on Twitter</a>
-																	</div>
-																</div>
-															</div>
+															
 														</div><!-- /.col -->
 													</div><!-- /.row -->
 
@@ -261,14 +232,15 @@
 			
 												</div><!-- /#home -->
 
-												<div id="managejobs" class="tab-pane">
+												<div id="uploads" class="tab-pane">
 													<div class="row">
 														<div class="col-xs-12 col-sm-8">
 															<div class="widget-box">
 																<div class="widget-body">
 																 <div class="widget-main">	
 																	
-																		<div class="form-group">
+																		
+																			<form>
 																			<div>
 																				<label class="col-sm-3 control-label no-padding-left" for="form-field-1"> Job Profile </label>
 																				<div class="col-sm-9">
@@ -297,22 +269,20 @@
 																				</div>
 
 																				<br><br><br>
-																				<button class="btn btn-info" type="button">
+																				<button class="btn btn-info" type="submit">
 																					<i class="ace-icon fa fa-check bigger-110"></i>
 																					SEND
 																				</button>
 
 																				&nbsp; &nbsp; &nbsp;
-																				<button class="btn" type="reset">
+																				<button class="btn btn-inverse" type="reset">
 																					<i class="ace-icon fa fa-undo bigger-110"></i>
 																					Reset
 																				</button>
 																				
 																			</div>
-																	   
-																	   </div>
-
-																		
+																	   	</form>
+																	
 																		
 																	</div>
 																	
@@ -339,96 +309,69 @@
 
 													</div><!-- /#feed -->
 
-												<div id="placement" class="tab-pane">
+												<div id="notification" class="tab-pane">
 													
 												
-													
-															<!-- PAGE CONTENT BEGINS -->
-															
-															<br>
-															<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-md">View Placement Performance</a>
-															<div id="dialog-message" class="hide">
-																		<p>
-																			<b>CREDIT SUISSE Interviews </b>
-																		</p>
-																		<p> Applied Students : <a href="#">97</a></p>
-																		<p>Shortlisted Candidates : 55</p>
-																		
-																		<div class="hr hr-12 hr-double"></div>
-																	</div><!-- #dialog-message -->
-															
-															<div class="row">
-																<div class="col-sm-9">
-																	<div class="space"></div>
+													<div class="col-xs-10 widget-container-col">
+														
+															<div class="widget-box">
+															<div class="widget-header widget-header-large">
+																<h4 class="widget-title">Job News</h4>
 
-																	<div id="calendar"></div>
+																<div class="widget-toolbar">
+																	<a href="#" data-action="settings">
+																		<i class="ace-icon fa fa-cog"></i>
+																	</a>
+
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a href="#" data-action="collapse">
+																		<i class="ace-icon fa fa-chevron-up"></i>
+																	</a>
+
+																	<a href="#" data-action="close">
+																		<i class="ace-icon fa fa-times"></i>
+																	</a>
 																</div>
-																<div class="col-sm-3">
-																		<div class="widget-box transparent">
-																			<div class="widget-header">
-																				<h4>Draggable events</h4>
-																			</div>
-
-																			<div class="widget-body">
-																				<div class="widget-main no-padding">
-																					<div id="external-events">
-																						<div class="external-event label-grey" data-class="label-grey">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 1
-																						</div>
-
-																						<div class="external-event label-success" data-class="label-success">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 2
-																						</div>
-
-																						<div class="external-event label-danger" data-class="label-danger">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 3
-																						</div>
-
-																						<div class="external-event label-purple" data-class="label-purple">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 4
-																						</div>
-
-																						<div class="external-event label-yellow" data-class="label-yellow">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 5
-																						</div>
-
-																						<div class="external-event label-pink" data-class="label-pink">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 6
-																						</div>
-
-																						<div class="external-event label-info" data-class="label-info">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 7
-																						</div>
-
-																						<label>
-																							<input type="checkbox" class="ace ace-checkbox" id="drop-remove" />
-																							
-																							<span class="lbl"> Remove after drop</span>
-																						</label>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																</div>
-								
 															</div>
 
-															<!-- PAGE CONTENT ENDS -->
+															<div class="widget-body">
+																<div class="widget-main padding-4 scrollable" data-size="200">
+																	
+																	<p class="alert alert-info">
+																		TCS Mock Interviews..
+																	</p>
+																	<p class="alert alert-danger">
+																		TCS Pre-placement talk..
+																	</p>
+																	<p class="alert alert-success">
+																		Jp Morgan CODE FOR GOOD Registration.<t>25th march 2016</t>
+																	</p>
+																	<p class="alert alert-primary">
+																		Aptitude test for all BE student.<t></t>22nd may 2016
+																	</p>
+																
+																
+															</div>
+															
+															</div>
+															
+														</div>
+												</div>
 														
 
 												</div><!-- /#placements -->
 
-												<div id="addtpc" class="tab-pane">
-													<div class="row">
-														<div class="col-xs-12 col-sm-6 center">
-																<div id="accordion" class="accordion-style1 panel-group">
+												<div id="activity" class="tab-pane">
+													&nbsp;&nbsp; <div class="row ">
+														<div class="col-xs-12 col-sm-4 left">
+															<a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Faculty Tpc</a> <br> <br>		
+														  	<a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Student Tpc </a> <br> <br>
+															  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add job Profile </a> <br><br>
+															<a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Add Event </a>
+																<!-- <div id="accordion" class="accordion-style1 panel-group">
 																	<div class="panel panel-inverse">
 																		<div class="panel-heading">
 																			<h4 class="panel-title">
@@ -440,8 +383,8 @@
 																		</div>
 
 																		<div class="panel-collapse collapse in" id="collapseOne">
-																			<div class="panel-body">
-																				<form class="form-inline">
+																		 <div class="panel-body">
+																				<form:form class="form-inline">
 																					<div class="radio">
 																						<label>
 																							<input name="form-field-radio" type="radio" class="ace"  value="faculty"/>
@@ -468,9 +411,10 @@
 																					<button type="submit" class="btn btn-info btn-sm">
 																						<i class="ace-icon fa fa-key bigger-110"></i>Create
 																					</button>
-																				</form>
+																				</form:form>
 
 																			</div>
+																		 
 																		</div>
 																	</div>
 
@@ -499,11 +443,19 @@
 																	</div>
 
 																	
-																</div>
+																</div> -->
 
 														<div>
 													</div>
 												</div>
+										
+														
+														&nbsp;&nbsp;<div class="col-xs-12 col-sm-4 right" >
+														  <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Remove Faculty Tpc  </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Remove Student Tpc </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add candidate </a> <br><br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Send Email </a>
+														</div>
 											</div><!-- /#pictures -->
 											</div>
 								
@@ -568,6 +520,25 @@
 		
 		
 		<!-- inline scripts related to this page -->
+			<script type="text/javascript">
+			jQuery(function($) {
+			
+			
+			
+			
+				// scrollables
+				$('.scrollable').each(function () {
+					var $this = $(this);
+					$(this).ace_scroll({
+						size: $this.attr('data-size') || 150,
+						//styleClass: 'scroll-left scroll-margin scroll-thin scroll-dark scroll-light no-track scroll-visible'
+					});
+				});
+				
+			
+			
+			});
+		</script>
 		
 		<script type="text/css">
 		.box{
@@ -581,11 +552,11 @@
 			$('input[type="radio"]').click(function(){
 				if($(this).attr("value")=="faculty"){
 					$(".box").not(".faculty").hide('fast');
-					$(".faculty").show();
+					$(".faculty").show('slow');
 				}
 				if($(this).attr("value")=="student"){
 					$(".box").not(".student").hide('fast');
-					$(".student").show();
+					$(".student").show('slow');
 				}
 			});
 		}); 
@@ -975,3 +946,43 @@
 	
 </body>
 </html>
+
+
+
+<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!-- <SCRIPT type="text/javascript">
+    window.history.forward();
+    function noBack() { window.history.forward(); }
+</SCRIPT> -->
+<title>Spring3Example</title>
+</head>
+<body onload="noBack();"
+    onpageshow="if (event.persisted) noBack();" onunload="">
+<h3>Welcome To the TPO page !!!!! </h3>
+<h2>Logged in as <core:out value="${loginForm.userName}" /></h2>
+<table>
+
+	<tr>
+		<td><a href="addUser">Click here to Add users via csv file</a></td>
+	</tr>
+	<tr>
+		<td>1. <a href="addstudent.html">Add Student</a></td></tr>
+    <tr>
+		<td>2. <a href="addfaculty.html">Add Faculty</a></td></tr>
+	<tr>
+		<td>3. <a href="removeuser.html">Remove User</a></td>
+	</tr>
+	<tr>
+		<td><a href="form">Logout</a></td>
+	</tr>
+</table>
+</body>
+</html> --%>
