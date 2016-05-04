@@ -296,7 +296,11 @@
 								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
+<<<<<<< HEAD
 									Jason
+=======
+									<core:out value="${loginForm.userName}" />
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>

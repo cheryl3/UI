@@ -47,7 +47,11 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
+<<<<<<< HEAD
 						<ul class="breadcrumb">
+=======
+						<!-- <ul class="breadcrumb">
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
@@ -57,7 +61,11 @@
 								<a href="#">More Pages</a>
 							</li>
 							<li class="active">User Profile</li>
+<<<<<<< HEAD
 						</ul><!-- /.breadcrumb -->
+=======
+						</ul>/.breadcrumb -->
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
@@ -71,7 +79,11 @@
 					<div class="page-content">
 							<div class="page-header">
 							<h1>
+<<<<<<< HEAD
 								User Profile Page
+=======
+								Profile Page
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 								
 							</h1>
 							</div><!-- /.page-header -->
@@ -165,7 +177,11 @@
 
 														<div class="col-xs-12 col-sm-9">
 															<h4 class="blue">
+<<<<<<< HEAD
 																<span class="middle">Alex M. Doe</span>
+=======
+																
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 
 																<span class="label label-purple arrowed-in-right">
 																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
@@ -178,6 +194,7 @@
 																	<div class="profile-info-name"> Username </div>
 
 																	<div class="profile-info-value">
+<<<<<<< HEAD
 																		<span>alexdoe</span>
 																	</div>
 																</div>
@@ -210,6 +227,37 @@
 
 																<div class="profile-info-row">
 																	<div class="profile-info-name"> Joined </div>
+=======
+																		<span><core:out value="${loginForm.userName}" /> </span>
+																	</div>
+																</div>
+
+
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Role: </div>
+
+																	<div class="profile-info-value">
+																		
+																		<span>Traning and Placement Organizer</span>
+																		
+																	</div>
+																</div> 
+																
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Current Account Status: </div>
+
+																	<div class="profile-info-value">
+																		
+																		<span>Active</span>
+																		
+																	</div>
+																</div>
+
+																
+
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Date Joined/Created:  </div>
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 
 																	<div class="profile-info-value">
 																		<span>2010/06/20</span>
@@ -217,7 +265,11 @@
 																</div>
 
 																<div class="profile-info-row">
+<<<<<<< HEAD
 																	<div class="profile-info-name"> Last Online </div>
+=======
+																	<div class="profile-info-name"> Last Login </div>
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 
 																	<div class="profile-info-value">
 																		<span>3 hours ago</span>
@@ -227,6 +279,7 @@
 
 															<div class="hr hr-8 dotted"></div>
 
+<<<<<<< HEAD
 															<div class="profile-user-info">
 																<div class="profile-info-row">
 																	<div class="profile-info-name"> Website </div>
@@ -256,6 +309,9 @@
 																	</div>
 																</div>
 															</div>
+=======
+															
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 														</div><!-- /.col -->
 													</div><!-- /.row -->
 
@@ -343,6 +399,7 @@
 												<div id="notification" class="tab-pane">
 													
 												
+<<<<<<< HEAD
 													
 															<!-- PAGE CONTENT BEGINS -->
 															
@@ -422,14 +479,74 @@
 															</div>
 
 															<!-- PAGE CONTENT ENDS -->
+=======
+													<div class="col-xs-10 widget-container-col">
+														
+															<div class="widget-box">
+															<div class="widget-header widget-header-large">
+																<h4 class="widget-title">Job News</h4>
+
+																<div class="widget-toolbar">
+																	<a href="#" data-action="settings">
+																		<i class="ace-icon fa fa-cog"></i>
+																	</a>
+
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a href="#" data-action="collapse">
+																		<i class="ace-icon fa fa-chevron-up"></i>
+																	</a>
+
+																	<a href="#" data-action="close">
+																		<i class="ace-icon fa fa-times"></i>
+																	</a>
+																</div>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main padding-4 scrollable" data-size="200">
+																	
+																	<p class="alert alert-info">
+																		TCS Mock Interviews..
+																	</p>
+																	<p class="alert alert-danger">
+																		TCS Pre-placement talk..
+																	</p>
+																	<p class="alert alert-success">
+																		Jp Morgan CODE FOR GOOD Registration.<t>25th march 2016</t>
+																	</p>
+																	<p class="alert alert-primary">
+																		Aptitude test for all BE student.<t></t>22nd may 2016
+																	</p>
+																
+																
+															</div>
+															
+															</div>
+															
+														</div>
+												</div>
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 														
 
 												</div><!-- /#placements -->
 
 												<div id="activity" class="tab-pane">
+<<<<<<< HEAD
 													<div class="row">
 														<div class="col-xs-12 col-sm-6 center">
 																<div id="accordion" class="accordion-style1 panel-group">
+=======
+													&nbsp;&nbsp; <div class="row ">
+														<div class="col-xs-12 col-sm-4 left">
+															<a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Faculty Tpc</a> <br> <br>		
+														  	<a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Student Tpc </a> <br> <br>
+															  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add job Profile </a> <br><br>
+															<a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Add Event </a>
+																<!-- <div id="accordion" class="accordion-style1 panel-group">
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 																	<div class="panel panel-inverse">
 																		<div class="panel-heading">
 																			<h4 class="panel-title">
@@ -501,16 +618,29 @@
 																	</div>
 
 																	
+<<<<<<< HEAD
 																</div>
+=======
+																</div> -->
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 
 														<div>
 													</div>
 												</div>
 										
+<<<<<<< HEAD
 														<div class="col-xs-12 col-sm-6 center">
 														  <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Event </a> <br> <br>
 														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Candidates </a> <br> <br>
 														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Send Mail </a>
+=======
+														
+														&nbsp;&nbsp;<div class="col-xs-12 col-sm-4 right" >
+														  <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Remove Faculty Tpc  </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Remove Student Tpc </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add candidate </a> <br><br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Send Email </a>
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 														</div>
 											</div><!-- /#pictures -->
 											</div>
@@ -576,6 +706,28 @@
 		
 		
 		<!-- inline scripts related to this page -->
+<<<<<<< HEAD
+=======
+			<script type="text/javascript">
+			jQuery(function($) {
+			
+			
+			
+			
+				// scrollables
+				$('.scrollable').each(function () {
+					var $this = $(this);
+					$(this).ace_scroll({
+						size: $this.attr('data-size') || 150,
+						//styleClass: 'scroll-left scroll-margin scroll-thin scroll-dark scroll-light no-track scroll-visible'
+					});
+				});
+				
+			
+			
+			});
+		</script>
+>>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 		
 		<script type="text/css">
 		.box{
