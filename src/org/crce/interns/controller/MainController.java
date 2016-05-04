@@ -35,6 +35,10 @@ public class MainController {
 	public String login() {
 		return "Login";
 	}
+	@RequestMapping("/Loginform")
+	public String loginform() {
+		return "loginform";
+	}
 
 	@RequestMapping("/Upload")
 	public String upload() {
@@ -162,6 +166,11 @@ public class MainController {
 	@RequestMapping("/addJobPost")
 	public String addjobpost() {
 		return "addJobPost";
+	}
+	
+	@RequestMapping("/admin")
+	public String admin() {
+		return "Admin";
 	}
 
 }

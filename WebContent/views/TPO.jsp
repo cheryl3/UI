@@ -47,25 +47,9 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
-<<<<<<< HEAD
-						<ul class="breadcrumb">
-=======
-						<!-- <ul class="breadcrumb">
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
-							<li>
-								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Home</a>
-							</li>
 
-							<li>
-								<a href="#">More Pages</a>
-							</li>
-							<li class="active">User Profile</li>
-<<<<<<< HEAD
-						</ul><!-- /.breadcrumb -->
-=======
-						</ul>/.breadcrumb -->
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+						
+
 
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
@@ -79,11 +63,9 @@
 					<div class="page-content">
 							<div class="page-header">
 							<h1>
-<<<<<<< HEAD
-								User Profile Page
-=======
+
 								Profile Page
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 								
 							</h1>
 							</div><!-- /.page-header -->
@@ -91,45 +73,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-								<div class="clearfix">
-									<!-- <div class="pull-left alert alert-success no-margin">
-										<button type="button" class="close" data-dismiss="alert">
-											<i class="ace-icon fa fa-times"></i>
-										</button>
-
-										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
-										Click on the image below or on profile fields to edit them ...
-									</div>
- -->
-									<!-- <div class="pull-right">
-										<span class="green middle bolder">Choose profile: &nbsp;</span>
-
-										<div class="btn-toolbar inline middle no-margin">
-											<div data-toggle="buttons" class="btn-group no-margin">
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">1</span>
-
-													<input type="radio" value="1" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow active">
-													<span class="bigger-110">2</span>
-
-													<input type="radio" value="2" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">3</span>
-
-													<input type="radio" value="3" />
-												</label>
-											</div>
-										</div>
-									</div> -->
-								</div>
-
-								<!-- <div class="hr dotted"></div> -->
-
+								
 							<div class="show">
 									<div id="user-profile-2" class="user-profile">
 										<div class="tabbable">
@@ -177,11 +121,9 @@
 
 														<div class="col-xs-12 col-sm-9">
 															<h4 class="blue">
-<<<<<<< HEAD
-																<span class="middle">Alex M. Doe</span>
-=======
+
 																
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 
 																<span class="label label-purple arrowed-in-right">
 																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
@@ -194,40 +136,7 @@
 																	<div class="profile-info-name"> Username </div>
 
 																	<div class="profile-info-value">
-<<<<<<< HEAD
-																		<span>alexdoe</span>
-																	</div>
-																</div>
-																
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Role </div>
 
-																	<div class="profile-info-value">
-																		<span>Traning and Placement Organiser</span>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Location </div>
-
-																	<div class="profile-info-value">
-																		<i class="fa fa-map-marker light-orange bigger-110"></i>
-																		<span>Netherlands</span>
-																		<span>Amsterdam</span>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Age </div>
-
-																	<div class="profile-info-value">
-																		<span>38</span>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Joined </div>
-=======
 																		<span><core:out value="${loginForm.userName}" /> </span>
 																	</div>
 																</div>
@@ -257,7 +166,7 @@
 
 																<div class="profile-info-row">
 																	<div class="profile-info-name"> Date Joined/Created:  </div>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 
 																	<div class="profile-info-value">
 																		<span>2010/06/20</span>
@@ -265,11 +174,9 @@
 																</div>
 
 																<div class="profile-info-row">
-<<<<<<< HEAD
-																	<div class="profile-info-name"> Last Online </div>
-=======
+
 																	<div class="profile-info-name"> Last Login </div>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 
 																	<div class="profile-info-value">
 																		<span>3 hours ago</span>
@@ -279,39 +186,9 @@
 
 															<div class="hr hr-8 dotted"></div>
 
-<<<<<<< HEAD
-															<div class="profile-user-info">
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Website </div>
 
-																	<div class="profile-info-value">
-																		<a href="#" target="_blank">www.alexdoe.com</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-facebook-square bigger-150 blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Find me on Facebook</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-twitter-square bigger-150 light-blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Follow me on Twitter</a>
-																	</div>
-																</div>
-															</div>
-=======
 															
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 														</div><!-- /.col -->
 													</div><!-- /.row -->
 
@@ -399,87 +276,7 @@
 												<div id="notification" class="tab-pane">
 													
 												
-<<<<<<< HEAD
-													
-															<!-- PAGE CONTENT BEGINS -->
-															
-															<br>
-															<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-md">View Placement Performance</a>
-															<div id="dialog-message" class="hide">
-																		<p>
-																			<b>CREDIT SUISSE Interviews </b>
-																		</p>
-																		<p> Applied Students : <a href="#">97</a></p>
-																		<p>Shortlisted Candidates : 55</p>
-																		
-																		<div class="hr hr-12 hr-double"></div>
-																	</div><!-- #dialog-message -->
-															
-															<div class="row">
-																<div class="col-sm-9">
-																	<div class="space"></div>
 
-																	<div id="calendar"></div>
-																</div>
-																<div class="col-sm-3">
-																		<div class="widget-box transparent">
-																			<div class="widget-header">
-																				<h4>Draggable events</h4>
-																			</div>
-
-																			<div class="widget-body">
-																				<div class="widget-main no-padding">
-																					<div id="external-events">
-																						<div class="external-event label-grey" data-class="label-grey">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 1
-																						</div>
-
-																						<div class="external-event label-success" data-class="label-success">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 2
-																						</div>
-
-																						<div class="external-event label-danger" data-class="label-danger">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 3
-																						</div>
-
-																						<div class="external-event label-purple" data-class="label-purple">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 4
-																						</div>
-
-																						<div class="external-event label-yellow" data-class="label-yellow">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 5
-																						</div>
-
-																						<div class="external-event label-pink" data-class="label-pink">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 6
-																						</div>
-
-																						<div class="external-event label-info" data-class="label-info">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 7
-																						</div>
-
-																						<label>
-																							<input type="checkbox" class="ace ace-checkbox" id="drop-remove" />
-																							
-																							<span class="lbl"> Remove after drop</span>
-																						</label>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																</div>
-								
-															</div>
-
-															<!-- PAGE CONTENT ENDS -->
-=======
 													<div class="col-xs-10 widget-container-col">
 														
 															<div class="widget-box">
@@ -528,119 +325,34 @@
 															
 														</div>
 												</div>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 														
 
 												</div><!-- /#placements -->
 
 												<div id="activity" class="tab-pane">
-<<<<<<< HEAD
-													<div class="row">
-														<div class="col-xs-12 col-sm-6 center">
-																<div id="accordion" class="accordion-style1 panel-group">
-=======
+
 													&nbsp;&nbsp; <div class="row ">
 														<div class="col-xs-12 col-sm-4 left">
 															<a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Faculty Tpc</a> <br> <br>		
 														  	<a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Student Tpc </a> <br> <br>
 															  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add job Profile </a> <br><br>
 															<a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Add Event </a>
-																<!-- <div id="accordion" class="accordion-style1 panel-group">
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
-																	<div class="panel panel-inverse">
-																		<div class="panel-heading">
-																			<h4 class="panel-title">
-																				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-																					<i class="ace-icon fa fa-angle-down bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
-																					&nbsp;Create Tpc
-																				</a>
-																			</h4>
-																		</div>
+																
 
-																		<div class="panel-collapse collapse in" id="collapseOne">
-																		 <div class="panel-body">
-																				<form:form class="form-inline">
-																					<div class="radio">
-																						<label>
-																							<input name="form-field-radio" type="radio" class="ace"  value="faculty"/>
-																							<span class="lbl"> Faculty  </span>
-																						</label>
-																					 </div>
-																								
-																					<div class="radio">
-																						<label>
-																							<input name="form-field-radio" type="radio" class="ace" value="student"/>
-																							<span class="lbl">  Student</span>
-																						</label>
-																					</div>
-																					<br><br>
-																					<div class="faculty box" style="display: none;" >
-																						<input type="text" id="form-field-1" placeholder=" Name of Faculty Member" class="col-xs-10 col-sm-8" /><br><br>
-																						<input type="text" id="form-field-1" placeholder=" Role" class="col-xs-10 col-sm-8" />
-																					</div>	
-																					
-																					<div class="student box" style="display: none;6" >
-																						<input type="text" id="form-field-1" placeholder=" Name of student TPC" class="col-xs-10 col-sm-8" />
-																					</div>	
-																					<br>
-																					<button type="submit" class="btn btn-info btn-sm">
-																						<i class="ace-icon fa fa-key bigger-110"></i>Create
-																					</button>
-																				</form:form>
-
-																			</div>
-																		 
-																		</div>
-																	</div>
-
-																	<div class="panel panel-default">
-																		<div class="panel-heading">
-																			<h4 class="panel-title">
-																				<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-																					<i class="ace-icon fa fa-angle-right bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
-																					&nbsp;Delete Tpc
-																				</a>
-																			</h4>
-																		</div>
-
-																		<div class="panel-collapse collapse" id="collapseTwo">
-																			<div class="panel-body">
-																				<form class="form-inline">
-																					<input type="text" class="input-large" placeholder="Name of tpc" />
-																					
-																					<button type="button" class="btn btn-info btn-sm">
-																						<i class="ace-icon fa fa-key bigger-110"></i>Delete
-																					</button>
-																				</form		>
-
-																			</div>
-																		</div>
-																	</div>
-
-																	
-<<<<<<< HEAD
-																</div>
-=======
-																</div> -->
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 
 														<div>
 													</div>
 												</div>
 										
-<<<<<<< HEAD
-														<div class="col-xs-12 col-sm-6 center">
-														  <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Event </a> <br> <br>
-														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Candidates </a> <br> <br>
-														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Send Mail </a>
-=======
+
 														
 														&nbsp;&nbsp;<div class="col-xs-12 col-sm-4 right" >
 														  <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Remove Faculty Tpc  </a> <br> <br>
 														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Remove Student Tpc </a> <br> <br>
 														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add candidate </a> <br><br>
 														  <a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Send Email </a>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 														</div>
 											</div><!-- /#pictures -->
 											</div>
@@ -706,8 +418,7 @@
 		
 		
 		<!-- inline scripts related to this page -->
-<<<<<<< HEAD
-=======
+
 			<script type="text/javascript">
 			jQuery(function($) {
 			
@@ -727,7 +438,6 @@
 			
 			});
 		</script>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
 		
 		<script type="text/css">
 		.box{
@@ -1138,40 +848,3 @@
 
 
 
-<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<!-- <SCRIPT type="text/javascript">
-    window.history.forward();
-    function noBack() { window.history.forward(); }
-</SCRIPT> -->
-<title>Spring3Example</title>
-</head>
-<body onload="noBack();"
-    onpageshow="if (event.persisted) noBack();" onunload="">
-<h3>Welcome To the TPO page !!!!! </h3>
-<h2>Logged in as <core:out value="${loginForm.userName}" /></h2>
-<table>
-
-	<tr>
-		<td><a href="addUser">Click here to Add users via csv file</a></td>
-	</tr>
-	<tr>
-		<td>1. <a href="addstudent.html">Add Student</a></td></tr>
-    <tr>
-		<td>2. <a href="addfaculty.html">Add Faculty</a></td></tr>
-	<tr>
-		<td>3. <a href="removeuser.html">Remove User</a></td>
-	</tr>
-	<tr>
-		<td><a href="form">Logout</a></td>
-	</tr>
-</table>
-</body>
-</html> --%>

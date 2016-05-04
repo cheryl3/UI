@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
-<<<<<<< HEAD
-=======
+
      <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -36,25 +35,9 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
-<<<<<<< HEAD
-						<ul class="breadcrumb">
-=======
-					<!-- 	<ul class="breadcrumb">
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
-							<li>
-								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Home</a>
-							</li>
 
-							<li>
-								<a href="#">More Pages</a>
-							</li>
-							<li class="active">User Profile</li>
-<<<<<<< HEAD
-						</ul><!-- /.breadcrumb -->
-=======
-						</ul>/.breadcrumb -->
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+					
+
 
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
@@ -71,11 +54,9 @@
 
 						<div class="page-header">
 							<h1>
-<<<<<<< HEAD
-								User Profile Page
-=======
+
 								Profile Page
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 								
 							</h1>
 						</div><!-- /.page-header -->
@@ -84,44 +65,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="clearfix">
-									<!-- <div class="pull-left alert alert-success no-margin">
-										<button type="button" class="close" data-dismiss="alert">
-											<i class="ace-icon fa fa-times"></i>
-										</button>
-
-										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
-										Click on the image below or on profile fields to edit them ...
-									</div> -->
-
-									<!-- <div class="pull-right">
-										<span class="green middle bolder">Choose profile: &nbsp;</span>
-
-										<div class="btn-toolbar inline middle no-margin">
-											<div data-toggle="buttons" class="btn-group no-margin">
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">1</span>
-
-													<input type="radio" value="1" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow active">
-													<span class="bigger-110">2</span>
-
-													<input type="radio" value="2" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">3</span>
-
-													<input type="radio" value="3" />
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="hr dotted"></div> -->
-
+									
 							<div class="show">
 									<div id="user-profile-2" class="user-profile">
 										<div class="tabbable">
@@ -168,11 +112,9 @@
 
 														<div class="col-xs-12 col-sm-9">
 															<h4 class="blue">
-<<<<<<< HEAD
-																<span class="middle">Alex M. Doe</span>
-=======
+
 																
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 
 																<span class="label label-purple arrowed-in-right">
 																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
@@ -185,44 +127,14 @@
 																	<div class="profile-info-name"> Username </div>
 
 																	<div class="profile-info-value">
-<<<<<<< HEAD
-																		<span>alexdoe</span>
-																	</div>
-																</div>
-																
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Role </div>
 
-																	<div class="profile-info-value">
-																		<span>Faculty TPC (Room Allocation Incharge)</span>
-=======
 																		<span><core:out value="${loginForm.userName}" /> </span>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 																	</div>
 																</div>
 
 																<div class="profile-info-row">
-<<<<<<< HEAD
-																	<div class="profile-info-name"> Location </div>
 
-																	<div class="profile-info-value">
-																		<i class="fa fa-map-marker light-orange bigger-110"></i>
-																		<span>Netherlands</span>
-																		<span>Amsterdam</span>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Age </div>
-
-																	<div class="profile-info-value">
-																		<span>38</span>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Joined </div>
-=======
 																	<div class="profile-info-name"> Current Account Status: </div>
 
 																	<div class="profile-info-value">
@@ -236,7 +148,7 @@
 
 																<div class="profile-info-row">
 																	<div class="profile-info-name"> Date Joined/Created:  </div>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 
 																	<div class="profile-info-value">
 																		<span>2010/06/20</span>
@@ -244,11 +156,9 @@
 																</div>
 
 																<div class="profile-info-row">
-<<<<<<< HEAD
-																	<div class="profile-info-name"> Last Online </div>
-=======
+
 																	<div class="profile-info-name"> Last Login </div>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 
 																	<div class="profile-info-value">
 																		<span>3 hours ago</span>
@@ -258,39 +168,9 @@
 
 															<div class="hr hr-8 dotted"></div>
 
-<<<<<<< HEAD
-															<div class="profile-user-info">
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Website </div>
 
-																	<div class="profile-info-value">
-																		<a href="#" target="_blank">www.alexdoe.com</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-facebook-square bigger-150 blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Find me on Facebook</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-twitter-square bigger-150 light-blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Follow me on Twitter</a>
-																	</div>
-																</div>
-															</div>
-=======
 															
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 														</div><!-- /.col -->
 													</div><!-- /.row -->
 
@@ -378,12 +258,7 @@
 
 												<div id="notification" class="tab-pane">
 													
-<<<<<<< HEAD
-												<div class="row">
-											
-													</div>
 
-=======
 												<div class="col-xs-10 widget-container-col">
 														
 															<div class="widget-box">
@@ -431,7 +306,7 @@
 															</div>
 															
 														</div>
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 												</div>
 												
 											</div><!-- /#notification -->
@@ -480,8 +355,7 @@
 		<script src="assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
-<<<<<<< HEAD
-=======
+
 			<script type="text/javascript">
 			jQuery(function($) {
 			
@@ -502,7 +376,7 @@
 			});
 		</script>
 		
->>>>>>> 8300805cdf92020ffe6fd8060f04fdf5e5fba259
+
 		<script type="text/javascript">
 			jQuery(function($) {
 
