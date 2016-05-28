@@ -206,6 +206,221 @@ description: faculty contains tabs -> uploads ,notification -->
 												</div><!-- /#home --> --%>
 
 												<div id="uploads" class="tab-pane in active">
+=======
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
+     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Faculty | HOME</title>
+
+<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
+		<link rel="stylesheet" href="assets/css/jquery.gritter.min.css" />
+		<link rel="stylesheet" href="assets/css/select2.min.css" />
+		<link rel="stylesheet" href="assets/css/datepicker.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-editable.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-multiselect.min.css" />
+		<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+
+
+		<!-- page specific plugin for calander styles -->
+		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
+		<link rel="stylesheet" href="assets/css/fullcalendar.min.css" />
+
+</head>
+<body>
+<jsp:directive.include file="Header.jsp" />
+
+<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+					<!-- 	<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="#">Home</a>
+							</li>
+
+							<li>
+								<a href="#">More Pages</a>
+							</li>
+							<li class="active">User Profile</li>
+						</ul>/.breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="on" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- /.nav-search -->
+					</div>
+
+					<div class="page-content">
+						
+
+						<div class="page-header">
+							<h1>
+								Profile Page
+								
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								<div class="clearfix">
+									<!-- <div class="pull-left alert alert-success no-margin">
+										<button type="button" class="close" data-dismiss="alert">
+											<i class="ace-icon fa fa-times"></i>
+										</button>
+
+										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
+										Click on the image below or on profile fields to edit them ...
+									</div> -->
+
+									<!-- <div class="pull-right">
+										<span class="green middle bolder">Choose profile: &nbsp;</span>
+
+										<div class="btn-toolbar inline middle no-margin">
+											<div data-toggle="buttons" class="btn-group no-margin">
+												<label class="btn btn-sm btn-yellow">
+													<span class="bigger-110">1</span>
+
+													<input type="radio" value="1" />
+												</label>
+
+												<label class="btn btn-sm btn-yellow active">
+													<span class="bigger-110">2</span>
+
+													<input type="radio" value="2" />
+												</label>
+
+												<label class="btn btn-sm btn-yellow">
+													<span class="bigger-110">3</span>
+
+													<input type="radio" value="3" />
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="hr dotted"></div> -->
+
+							<div class="show">
+									<div id="user-profile-2" class="user-profile">
+										<div class="tabbable">
+											<ul class="nav nav-tabs padding-18">
+												<li class="active">
+													<a data-toggle="tab" href="#profile">
+														<i class="green ace-icon fa fa-user bigger-120"></i>
+														Profile
+													</a>
+												</li>
+
+												
+
+												<li>
+													<a data-toggle="tab" href="#uploads">
+														<i class="blue ace-icon fa fa-users bigger-120"></i>
+														Uploads
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#notification">
+														<i class="red ace-icon fa fa-bell bigger-120"></i>
+														Notification
+													</a>
+												</li>
+
+											</ul>
+
+											<div class="tab-content no-border padding-24">
+												<div id="profile" class="tab-pane in active">
+													<div class="row">
+														<div class="col-xs-12 col-sm-3 center">
+															<span class="profile-picture">
+																<img class="editable img-responsive" alt="Alex's Avatar" id="avatar2" src="assets/avatars/profile-pic.jpg" />
+															</span>
+
+															<div class="space space-4"></div>
+
+															 <label  class="label label-md label-primary"> 
+																
+																<span class="bigger-110">click on profile to edit </span>
+															</label>
+														</div><!-- /.col -->
+
+														<div class="col-xs-12 col-sm-9">
+															<h4 class="blue">
+																
+
+																<span class="label label-purple arrowed-in-right">
+																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
+																	online
+																</span>
+															</h4>
+
+															<div class="profile-user-info">
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Username </div>
+
+																	<div class="profile-info-value">
+																		<span><core:out value="${loginForm.userName}" /> </span>
+																	</div>
+																</div>
+
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Current Account Status: </div>
+
+																	<div class="profile-info-value">
+																		
+																		<span>Active</span>
+																		
+																	</div>
+																</div>
+
+																
+
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Date Joined/Created:  </div>
+
+																	<div class="profile-info-value">
+																		<span>2010/06/20</span>
+																	</div>
+																</div>
+
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Last Login </div>
+
+																	<div class="profile-info-value">
+																		<span>3 hours ago</span>
+																	</div>
+																</div>
+															</div>
+
+															<div class="hr hr-8 dotted"></div>
+
+															
+														</div><!-- /.col -->
+													</div><!-- /.row -->
+
+													<div class="space-20"></div>
+
+													
+												</div><!-- /#home -->
+
+												<div id="uploads" class="tab-pane">
+>>>>>>> branch 'master' of https://github.com/pankajsankpal/UI.git
 													<div class="row">
 														<div class="col-xs-12 col-sm-8">
 															<div class="widget-box">
