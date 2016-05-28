@@ -1,3 +1,7 @@
+<!-- author: Pankaj sankpal
+description: contains tabs ->  profile,activities,uploads ,notification -->
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -198,30 +202,36 @@
 														<div class="row">
 															<div class="col-xs-12">
 																<!-- PAGE CONTENT BEGINS -->
-																<div class="alert alert-info">
-																	<i class="ace-icon fa fa-hand-o-right"></i>
-								
-																	Please note that demo server is not configured to save uploaded files, therefore you may get an error message.
-																	<button class="close" data-dismiss="alert">
-																		<i class="ace-icon fa fa-times"></i>
-																	</button>
-																</div>
-								
-																<div>
-																	<form action="./dummy.html" class="dropzone" id="dropzone">
-																		<div class="fallback">
-																			<input name="file" type="file" multiple="" />
+																
+																	<div class="widget-box widget-color-green2">
+																		<div class="widget-header">
+																			<h4 class="widget-title lighter smaller">Browse Files</h4>
 																		</div>
-																	</form>
-																</div><!-- PAGE CONTENT ENDS -->
+							
+																		<div class="widget-body">
+																			<div class="widget-main padding-8">
+																				<ul id="tree2"></ul>
+																			</div>
+																			
+																			<button class="btn btn-md btn-block btn-primary pull-right">
+																			<span class="bigger-110">Upload</span>
+		
+																			<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+																		</button>
+																		</div>
+																		
+																	</div>
+																	
+																
 															</div><!-- /.col -->
 														</div><!-- /.row -->
+					
 													
 													</div><!-- /.row -->
 
 													<div class="space-12"></div>
 
-													</div><!-- /#uploads -->
+												</div><!-- /#feed -->
 
 												<div id="notification" class="tab-pane">
 													
@@ -318,7 +328,7 @@
 <jsp:directive.include file="Footer.jsp" />
 
 	<!-- page specific plugin scripts -->
-
+	<script src="assets/js/fuelux.tree.min.js"></script>
 		<!--[if lte IE 8]>
 		  <script src="assets/js/excanvas.min.js"></script>
 		<![endif]-->
@@ -370,6 +380,113 @@
 		
 		<script type="text/javascript">
 			jQuery(function($) {
+				
+var sampleData = initiateDemoData();//see below
+				
+				
+				$('#tree2').ace_tree({
+					dataSource: sampleData['dataSource2'] ,
+					loadingHTML:'<div class="tree-loading"><i class="ace-icon fa fa-refresh fa-spin blue"></i></div>',
+					'open-icon' : 'ace-icon fa fa-folder-open',
+					'close-icon' : 'ace-icon fa fa-folder',
+					'selectable' : false,
+					multiSelect: false,
+					'selected-icon' : null,
+					'unselected-icon' : null
+				});
+
+				function initiateDemoData(){
+					
+					var tree_data_2 = {
+							'marksheets' : {text: 'Marksheets', type: 'folder', 'icon-class':'red'}	,
+							'resume' : {text: 'Resumes', type: 'folder', 'icon-class':'orange'}	,
+							
+						}
+						tree_data_2['resume']['additionalParameters'] = {
+							'children' : [
+								{text: '<i class="ace-icon fa fa-file-text blue"></i> resume1.doc', type: 'item'},
+								{text: '<i class="ace-icon fa fa-file-text blue"></i> TCS resume.doc', type: 'item'},
+								
+							]
+						}
+						/* tree_data_2['video']['additionalParameters'] = {
+							'children' : [
+								{text: '<i class="ace-icon fa fa-film blue"></i> movie1.avi', type: 'item'},
+								{text: '<i class="ace-icon fa fa-film blue"></i> movie2.avi', type: 'item'},
+								{text: '<i class="ace-icon fa fa-film blue"></i> movie3.avi', type: 'item'},
+								{text: '<i class="ace-icon fa fa-film blue"></i> movie4.avi', type: 'item'},
+								{text: '<i class="ace-icon fa fa-film blue"></i> movie5.avi', type: 'item'}
+							]
+						} */
+						tree_data_2['marksheets']['additionalParameters'] = {
+							'children' : {
+								'ssc' : {text: 'SSC', type: 'folder', 'icon-class':'pink'} , 
+								'hsc' : {text: 'HSC', type: 'folder', 'icon-class':'pink'}, 
+								'sem1' : {text: 'sem_1', type: 'folder', 'icon-class':'pink'},
+								'sem3' : {text: 'sem_3', type: 'folder', 'icon-class':'pink'},
+								'sem6' : {text: 'sem_6', type: 'folder', 'icon-class':'pink'}
+							}
+						}
+						tree_data_2['marksheets']['additionalParameters']['children']['ssc']['additionalParameters'] = {
+							'children' : [
+								{text: '<i class="ace-icon fa fa-file-text green"></i> sample1.pdf <a href="#">download</a>', type: 'item'},
+								{text: '<i class="ace-icon fa fa-file-text green"></i>sample2.pdf', type: 'item'},
+								
+							]
+						}
+						tree_data_2['marksheets']['additionalParameters']['children']['hsc']['additionalParameters'] = {
+							'children' : [
+								{text: '<i class="ace-icon fa  fa-file-text red"></i> doc1', type: 'item'},
+								{text: '<i class="ace-icon fa fa-file-text grey"></i> doc2', type: 'item'},
+								
+							]
+						}
+
+/* 
+						tree_data_2['documents']['additionalParameters'] = {
+							'children' : [
+								{text: '<i class="ace-icon fa fa-file-text red"></i> document1.pdf', type: 'item'},
+								{text: '<i class="ace-icon fa fa-file-text grey"></i> document2.doc', type: 'item'},
+								{text: '<i class="ace-icon fa fa-file-text grey"></i> document3.doc', type: 'item'},
+								{text: '<i class="ace-icon fa fa-file-text red"></i> document4.pdf', type: 'item'},
+								{text: '<i class="ace-icon fa fa-file-text grey"></i> document5.doc', type: 'item'}
+							]
+						}
+
+						tree_data_2['backup']['additionalParameters'] = {
+							'children' : [
+								{text: '<i class="ace-icon fa fa-archive brown"></i> backup1.zip', type: 'item'},
+								{text: '<i class="ace-icon fa fa-archive brown"></i> backup2.zip', type: 'item'},
+								{text: '<i class="ace-icon fa fa-archive brown"></i> backup3.zip', type: 'item'},
+								{text: '<i class="ace-icon fa fa-archive brown"></i> backup4.zip', type: 'item'}
+							]
+						} */
+						var dataSource2 = function(options, callback){
+							var $data = null
+							if(!("text" in options) && !("type" in options)){
+								$data = tree_data_2;//the root tree
+								callback({ data: $data });
+								return;
+							}
+							else if("type" in options && options.type == "folder") {
+								if("additionalParameters" in options && "children" in options.additionalParameters)
+									$data = options.additionalParameters.children || {};
+								else $data = {}//no data
+							}
+							
+							if($data != null)//this setTimeout is only for mimicking some random delay
+								setTimeout(function(){callback({ data: $data });} , parseInt(Math.random() * 500) + 200);
+
+							//we have used static data here
+							//but you can retrieve your data dynamically from a server using ajax call
+							//checkout examples/treeview.html and examples/treeview.js for more info
+						}
+
+						
+						return { 'dataSource2' : dataSource2}
+
+				}
+				
 
 /* initialize the external events
 	-----------------------------------------------------------------*/

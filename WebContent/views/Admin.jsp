@@ -1,3 +1,8 @@
+<!-- author: Pankaj sankpal
+description: contains tabs ->  activity ,uploads ,notification -->
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -36,9 +41,6 @@
 						<script type="text/javascript">
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
-
-						
-
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">custom
 								<span class="input-icon">
@@ -54,8 +56,7 @@
 
 						<div class="page-header">
 							<h1>
-								 Profile Page
-								
+								 Admin Page.								
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -63,63 +64,14 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="clearfix">
-									<!-- <div class="pull-left alert alert-success no-margin">
-										<button type="button" class="close" data-dismiss="alert">
-											<i class="ace-icon fa fa-times"></i>
-										</button>
-
-										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
-										Click on the image below or on profile fields to edit them ...
-									</div> -->
-
-								<!-- 	<div class="pull-right">
-										<span class="green middle bolder">Choose profile: &nbsp;</span>
-
-										<div class="btn-toolbar inline middle no-margin">
-											<div data-toggle="buttons" class="btn-group no-margin">
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">1</span>
-
-													<input type="radio" value="1" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow active">
-													<span class="bigger-110">2</span>
-
-													<input type="radio" value="2" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">3</span>
-
-													<input type="radio" value="3" />
-												</label>
-											</div>
-										</div>
-									</div>       Choose Pprofile Ended  -->
+									
 								</div>
-
-								<div class="hr dotted"></div>
-
-							<div class="show">
+								<div class="show">
 									<div id="user-profile-2" class="user-profile">
 										<div class="tabbable">
 											<ul class="nav nav-tabs padding-18">
+												
 												<li class="active">
-													<a data-toggle="tab" href="#profile">
-														<i class="green ace-icon fa fa-user bigger-120"></i>
-														Profile
-													</a>
-												</li>
-
-											<!-- 	<li>
-													<a data-toggle="tab" href="#managejobs">
-														<i class="orange ace-icon fa fa-rss bigger-120"></i>
-														Manage jobs for students
-													</a>
-												</li>
- -->
-												<li>
 													<a data-toggle="tab" href="#activity">
 														<i class="blue ace-icon fa fa-users bigger-120"></i>
 														Activity
@@ -141,7 +93,7 @@
 											</ul>
 
 											<div class="tab-content no-border padding-24">
-												<div id="profile" class="tab-pane in active">
+												<%-- <div id="profile" class="tab-pane in active">
 													<div class="row">
 														<div class="col-xs-12 col-sm-3 center">
 															<span class="profile-picture">
@@ -216,112 +168,24 @@
 													<div class="space-20"></div>
 
 													
-												</div><!-- /#home -->
+												</div><!-- /#home --> --%>
 
-												<div id="activity" class="tab-pane">
+												<div id="activity" class="tab-pane in active">
 													<div class="row">
 														<div class="col-xs-12 col-sm-4 left">
-														
-														 <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Click to Add users Via CSV file  </a> <br> <br>
-														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">manually add users </a> <br> <br>
+														<br>
+														 <a href="" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Click to Add users Via CSV file  </a> <br> <br>
+														  <a href="Admin1" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">manually add users </a> <br> <br>
 														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Remove users </a>
-																<%-- <div id="accordion" class="accordion-style1 panel-group">
-																	<div class="panel panel-inverse active">
-																		<div class="panel-heading">
-																			<h4 class="panel-title">
-																				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-																					<i class="ace-icon fa fa-angle-down bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
-																					&nbsp;Add TPO
-																				</a>
-																			</h4>
-																		</div>
+																
 
-																		<div class="panel-collapse collapse in" id="collapseOne">
-																			<div class="panel-body">
-																				<form class="form-inline">
-																					
-																					
-																					<div >
-																						<input type="text" id="form-field-1" placeholder=" Name of TPO" class="col-xs-10 col-sm-8" />
-																					
-																					</div>	
-																		
-																					<button type="button" class="btn btn-info btn-sm">
-																						<i class="ace-icon fa fa-key bigger-110"></i>Create
-																					</button>
-																				</form>
-
-																			</div>
-																		</div>
-																	</div>
-																	
-																</div> --%>
-
-														
-												</div>
-													
-													 	<div class="col-sm-6 right">
-															<%-- 	<div class="widget-box">
-																	<div class="widget-header">
-																		<h4 class="widget-title">Custom File Input</h4>
-					
-																		<div class="widget-toolbar">
-																			<a href="#" data-action="collapse">
-																				<i class="ace-icon fa fa-chevron-up"></i>
-																			</a>
-					
-																			<a href="#" data-action="close">
-																				<i class="ace-icon fa fa-times"></i>
-																			</a>
-																		</div>
-																	</div>
-					
-																	<div class="widget-body">
-																		<div class="widget-main">
-																		<form method="POST" enctype="multipart/form-data" action="uploadFile">
-																			<div class="form-group">
-																					<div class="col-xs-10">
-																						<input type="text" id="form-field-1" name="year" placeholder="Enter Year of passing.." class="col-xs-10 col-sm-8" />
-																					
-																					</div>	<br><br>
-																				<div class="col-xs-10">
-																					<input type="file" name="fileupload" id="id-input-file-2" multiple="" />
-																				</div>																		<button  class="btn btn-sm btn-yellow"  type="submit" >Upload</button>
-																				<!-- <button  class="btn btn-sm btn-yellow"  type="reset" >reset</button> -->
-																				
-																			</div>
-																		</form> 
-																		
-																		
-																		<!-- <form method="POST" enctype="multipart/form-data" action="uploadFile">
-																		Enter year of passing:   <input id="year" name="year" type="text" value=""/><br/><br/>
-																				File to upload: <input type="file" name="fileUpload"><br />
-																				  <input type="submit" value="Upload"> Press here to upload the file!
-																			</form> -->
-																			
-																			<h4 align="center"> OR </h4>
-																			<a href="Admin1"><p align="center">Add Users Manually</p></a>
-																		
-																			
-																			<!-- <div class="form-group">
-																				<div class="col-xs-12">
-																					<input multiple="" type="file" id="id-input-file-3" />
-																				</div>
-																			</div>
-					
-																			<label>
-																				<input type="checkbox" name="file-format" id="id-file-format" class="ace" />
-																				<span class="lbl"> Allow only images</span>
-																			</label> -->
-																		
-																		</div>
-																	</div>
-																</div> --%>
 														</div>
+													
+													 	
 											
-													</div><!-- /#manageusers -->
+													</div>
 											
-										</div>
+												</div><!-- /#activity -->
 									
 												<div id="uploads" class="tab-pane">
 													
@@ -330,7 +194,7 @@
 															<!-- PAGE CONTENT BEGINS -->
 															
 															<br>
-															<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-md">View Placement Performance</a>
+															<!-- <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-md">View Placement Performance</a>
 															<div id="dialog-message" class="hide">
 																		<p>
 																			<b>CREDIT SUISSE Interviews </b>
@@ -339,72 +203,10 @@
 																		<p>Shortlisted Candidates : 55</p>
 																		
 																		<div class="hr hr-12 hr-double"></div>
-																	</div><!-- #dialog-message -->
+																	</div>	 -->
 															
-															<div class="row">
-																<div class="col-sm-9">
-																	<div class="space"></div>
-
-																	<div id="calendar"></div>
-																</div>
-																<div class="col-sm-3">
-																		<div class="widget-box transparent">
-																			<div class="widget-header">
-																				<h4>Draggable events</h4>
-																			</div>
-
-																			<div class="widget-body">
-																				<div class="widget-main no-padding">
-																					<div id="external-events">
-																						<div class="external-event label-grey" data-class="label-grey">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 1
-																						</div>
-
-																						<div class="external-event label-success" data-class="label-success">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 2
-																						</div>
-
-																						<div class="external-event label-danger" data-class="label-danger">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 3
-																						</div>
-
-																						<div class="external-event label-purple" data-class="label-purple">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 4
-																						</div>
-
-																						<div class="external-event label-yellow" data-class="label-yellow">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 5
-																						</div>
-
-																						<div class="external-event label-pink" data-class="label-pink">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 6
-																						</div>
-
-																						<div class="external-event label-info" data-class="label-info">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 7
-																						</div>
-
-																						<label>
-																							<input type="checkbox" class="ace ace-checkbox" id="drop-remove" />
-																							
-																							<span class="lbl"> Remove after drop</span>
-																						</label>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																</div>
-								
-															</div>
-
-															<!-- PAGE CONTENT ENDS -->
+													
+														 <!-- PAGE CONTENT ENDS -->
 														
 
 												</div><!-- /#placements -->

@@ -100,6 +100,10 @@ public class MainController {
 		return "sidebartpo";
 	}
 	
+	@RequestMapping("/Admin1")
+	public String Admin1() {
+		return "Admin1";
+	}
 	
 	
 }

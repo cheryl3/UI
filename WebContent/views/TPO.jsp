@@ -1,3 +1,7 @@
+<!-- author: Pankaj sankpal
+description: contains tabs ->  activity ,uploads ,notification -->
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -28,13 +32,6 @@
 		<script src="assets/js/ace-extra.min.js"></script>
 		
 		
-		<!--  script for smooth scrolling 
-			
-		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> 
-		
-		-->
-		
-		
 </head>
 <body>
 
@@ -47,17 +44,7 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
-						<!-- <ul class="breadcrumb">
-							<li>
-								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Home</a>
-							</li>
-
-							<li>
-								<a href="#">More Pages</a>
-							</li>
-							<li class="active">User Profile</li>
-						</ul>/.breadcrumb -->
+						
 
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
@@ -71,7 +58,7 @@
 					<div class="page-content">
 							<div class="page-header">
 							<h1>
-								Profile Page
+								 TPO Page. 
 								
 							</h1>
 							</div><!-- /.page-header -->
@@ -80,40 +67,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="clearfix">
-									<!-- <div class="pull-left alert alert-success no-margin">
-										<button type="button" class="close" data-dismiss="alert">
-											<i class="ace-icon fa fa-times"></i>
-										</button>
-
-										<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
-										Click on the image below or on profile fields to edit them ...
-									</div>
- -->
-									<!-- <div class="pull-right">
-										<span class="green middle bolder">Choose profile: &nbsp;</span>
-
-										<div class="btn-toolbar inline middle no-margin">
-											<div data-toggle="buttons" class="btn-group no-margin">
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">1</span>
-
-													<input type="radio" value="1" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow active">
-													<span class="bigger-110">2</span>
-
-													<input type="radio" value="2" />
-												</label>
-
-												<label class="btn btn-sm btn-yellow">
-													<span class="bigger-110">3</span>
-
-													<input type="radio" value="3" />
-												</label>
-											</div>
-										</div>
-									</div> -->
+									
 								</div>
 
 								<!-- <div class="hr dotted"></div> -->
@@ -123,13 +77,6 @@
 										<div class="tabbable">
 											<ul class="nav nav-tabs padding-18">
 												<li class="active">
-													<a data-toggle="tab" href="#profile">
-														<i class="green ace-icon fa fa-user bigger-120"></i>
-														Profile
-													</a>
-												</li>
-
-												<li>
 													<a data-toggle="tab" href="#activity">
 														<i class="orange ace-icon fa fa-rss bigger-120"></i>
 														Activity
@@ -152,7 +99,7 @@
 											</ul>
 
 											<div class="tab-content no-border padding-24">
-												<div id="profile" class="tab-pane in active">
+												<%-- <div id="profile" class="tab-pane in active">
 													<div class="row">
 														<div class="col-xs-12 col-sm-3 center">
 															<span class="profile-picture">
@@ -230,7 +177,7 @@
 
 													<div class="space-20"></div>
 			
-												</div><!-- /#home -->
+												</div><!-- /#home --> --%>
 
 												<div id="uploads" class="tab-pane">
 													<div class="row">
@@ -364,98 +311,30 @@
 
 												</div><!-- /#placements -->
 
-												<div id="activity" class="tab-pane">
-													&nbsp;&nbsp; <div class="row ">
+												<div id="activity" class="tab-pane in active">
+													 <div class="row ">
+														
+														
+														 <br>
+													 
 														<div class="col-xs-12 col-sm-4 left">
-															<a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Faculty Tpc</a> <br> <br>		
-														  	<a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Student Tpc </a> <br> <br>
+															
 															  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add job Profile </a> <br><br>
 															<a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Add Event </a>
-																<!-- <div id="accordion" class="accordion-style1 panel-group">
-																	<div class="panel panel-inverse">
-																		<div class="panel-heading">
-																			<h4 class="panel-title">
-																				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-																					<i class="ace-icon fa fa-angle-down bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
-																					&nbsp;Create Tpc
-																				</a>
-																			</h4>
-																		</div>
+																
 
-																		<div class="panel-collapse collapse in" id="collapseOne">
-																		 <div class="panel-body">
-																				<form:form class="form-inline">
-																					<div class="radio">
-																						<label>
-																							<input name="form-field-radio" type="radio" class="ace"  value="faculty"/>
-																							<span class="lbl"> Faculty  </span>
-																						</label>
-																					 </div>
-																								
-																					<div class="radio">
-																						<label>
-																							<input name="form-field-radio" type="radio" class="ace" value="student"/>
-																							<span class="lbl">  Student</span>
-																						</label>
-																					</div>
-																					<br><br>
-																					<div class="faculty box" style="display: none;" >
-																						<input type="text" id="form-field-1" placeholder=" Name of Faculty Member" class="col-xs-10 col-sm-8" /><br><br>
-																						<input type="text" id="form-field-1" placeholder=" Role" class="col-xs-10 col-sm-8" />
-																					</div>	
-																					
-																					<div class="student box" style="display: none;6" >
-																						<input type="text" id="form-field-1" placeholder=" Name of student TPC" class="col-xs-10 col-sm-8" />
-																					</div>	
-																					<br>
-																					<button type="submit" class="btn btn-info btn-sm">
-																						<i class="ace-icon fa fa-key bigger-110"></i>Create
-																					</button>
-																				</form:form>
-
-																			</div>
-																		 
-																		</div>
-																	</div>
-
-																	<div class="panel panel-default">
-																		<div class="panel-heading">
-																			<h4 class="panel-title">
-																				<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-																					<i class="ace-icon fa fa-angle-right bigger-110" data-icon-hide="ace-icon fa fa-angle-down" data-icon-show="ace-icon fa fa-angle-right"></i>
-																					&nbsp;Delete Tpc
-																				</a>
-																			</h4>
-																		</div>
-
-																		<div class="panel-collapse collapse" id="collapseTwo">
-																			<div class="panel-body">
-																				<form class="form-inline">
-																					<input type="text" class="input-large" placeholder="Name of tpc" />
-																					
-																					<button type="button" class="btn btn-info btn-sm">
-																						<i class="ace-icon fa fa-key bigger-110"></i>Delete
-																					</button>
-																				</form		>
-
-																			</div>
-																		</div>
-																	</div>
-
-																	
-																</div> -->
-
-														<div>
-													</div>
-												</div>
+														</div>
 										
 														
 														&nbsp;&nbsp;<div class="col-xs-12 col-sm-4 right" >
-														  <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Remove Faculty Tpc  </a> <br> <br>
-														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Remove Student Tpc </a> <br> <br>
+														  
 														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add candidate </a> <br><br>
-														  <a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Send Email </a>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Send Email </a><br><br>
 														</div>
+														
+												<div class="col-xs-12 col-sm-8 left">
+														<a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Manage Faculty and Student TPC's </a> <br><br>	
+												</div>
 											</div><!-- /#pictures -->
 											</div>
 								
@@ -545,7 +424,7 @@
 				display: none;
 			}
 		</script>
-		<script type="text/javascript">
+	<script type="text/javascript">
 		
 	/*** script for show /hide of addtpc section*/
 		 $(document).ready(function(){
