@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Companies|Company1</title>
+<title>TPO|Job Post</title>
 <!-- page specific plugin styles -->
 <link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
 <link rel="stylesheet" href="assets/css/chosen.min.css" />
@@ -40,7 +40,7 @@
 					<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a>
 					</li>
 
-					<li><a href="CompaniesPage">TPO</a></li>
+					<li><a href="tpo">TPO</a></li>
 					<li class="active">Add Job Post</li>
 				</ul>
 				<!-- /.breadcrumb -->

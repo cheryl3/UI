@@ -336,7 +336,7 @@
 														<div class="col-xs-12 col-sm-4 left">
 															<a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Add Faculty Tpc</a> <br> <br>		
 														  	<a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">Add Student Tpc </a> <br> <br>
-															  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add job Profile </a> <br><br>
+															  <a href="addJobPost" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Add Job Profile </a> <br><br>
 															<a href="#" id="id-btn-dialog1" class="btn btn-inverse btn-lg btn-block">Add Event </a>
 																
 
