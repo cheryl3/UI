@@ -163,15 +163,16 @@ public class MainController {
 		return model;
 	}
 	
-<<<<<<< HEAD
+
 	@RequestMapping("/addJobPost")
 	public String addjobpost() {
 		return "addJobPost";
-=======
+	}
+
 	@RequestMapping("/Admin1")
 	public String Admin1() {
 		return "Admin1";
->>>>>>> 830b45bfa77ddc3ba9613466c52ccf21e4994483
+
 	}
 	
 	@RequestMapping("/admin")

@@ -1,3 +1,5 @@
+<!-- author: Lenherd Olivera
+description: edits a few entries-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>

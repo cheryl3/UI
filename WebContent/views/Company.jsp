@@ -1,3 +1,5 @@
+<!-- author: Lenherd Olivera
+description: dynamically creating a page once the Content on companiesPade is clicked -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
