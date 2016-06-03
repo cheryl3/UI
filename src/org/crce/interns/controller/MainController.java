@@ -179,5 +179,10 @@ public class MainController {
 	public String admin() {
 		return "Admin";
 	}
+	
+	@RequestMapping("/Feedback")
+	public String feedback() {
+		return "Feedback";
+	}
 
 }

@@ -161,7 +161,7 @@ description: dynamically creating a page once the Content on companiesPade is cl
 											<div class="hr hr-8 dotted"></div>
 
 											<div class="row">
-												<div class="col-xs-12 col-sm-6">
+												<div class="col-xs-12 col-sm-4">
 													<div class="widget-box transparent">
 														<div class="widget-header widget-header-small">
 															<h4 class="widget-title smaller">
@@ -169,7 +169,7 @@ description: dynamically creating a page once the Content on companiesPade is cl
 																Job Posts
 															</h4>
 															<br /> <a href="JobPosts?companyname=${companyname}">
-																<img style="border: 1" width="500" height="200"
+																<img style="border: 1" width="400" height="200"
 																alt="150x150" src="assets/images/companies/jobposts.jpg" />
 															</a>
 														</div>
@@ -181,8 +181,31 @@ description: dynamically creating a page once the Content on companiesPade is cl
 														</div>
 													</div>
 												</div>
+												
+												
+												<div class="col-xs-12 col-sm-4">
+													<div class="widget-box transparent">
+														<div class="widget-header widget-header-small">
+															<h4 class="widget-title smaller">
+																<i class="ace-icon fa fa-check-square-o bigger-110"></i>
+																Feedback
+															</h4>
+															<br /> <a href="Feedback?companyname=${companyname}">
+																<img style="border: 1" width="400" height="200"
+																alt="150x150" src="assets/images/companies/feedback.png" />
+															</a>
+														</div>
 
-												<div class="col-xs-12 col-sm-6">
+														<div class="widget-body">
+															<div class="widget-main">
+																<p>Check out the company Feedback.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+
+												<div class="col-xs-12 col-sm-4">
 													<div class="widget-box transparent">
 														<div class="widget-header widget-header-small">
 															<h4 class="widget-title smaller">
@@ -191,7 +214,7 @@ description: dynamically creating a page once the Content on companiesPade is cl
 															</h4>
 															<br /> <a
 																href="JobApplicants?companyname=${companyname}"> <img
-																align="middle" style="border: 1" width="500"
+																align="middle" style="border: 1" width="400"
 																height="200" alt="150x150"
 																src="assets/images/companies/jobapplicants.jpg" />
 															</a>
@@ -206,6 +229,7 @@ description: dynamically creating a page once the Content on companiesPade is cl
 														</div>
 													</div>
 												</div>
+												
 											</div>
 											<div class="hr hr-8 dotted"></div>
 
